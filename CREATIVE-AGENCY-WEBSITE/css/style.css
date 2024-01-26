@@ -134,6 +134,9 @@ footer .menu .social-bar {
   left: 10px;
   transform: scale(0.5);
 }
+footer .menu .social-bar *:hover {
+  transform: scale(1.2);
+}
 footer .menu .navigation ul {
   list-style: none;
   text-align: center;
