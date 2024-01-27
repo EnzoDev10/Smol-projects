@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #118ab2;
+}
+
+.projects-container {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: #f48c06;
+    box-shadow: 4px 4px 3px -3px black;
+}
+
+a,
+a:visited{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
