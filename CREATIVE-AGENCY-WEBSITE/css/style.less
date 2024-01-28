@@ -287,6 +287,73 @@ a:visited {
   }
 }
 
+/* CONTACT PAGE */
+
+.form-container {
+  margin: 50px 0;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    *:not([type=submit]) {
+      padding: 10px;
+      border: 1px solid #888;
+    }
+
+    textarea {
+      height: 125px;
+      resize: none;
+    }
+
+    .btn {
+      padding: 10px 0;
+      letter-spacing: 2px;
+      color: @medium-color;
+      background-color: @secondary-color;
+      cursor: pointer;
+      transition: all 0.5s;
+
+
+      &:hover {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-bottom: 100px;
+
+  .contact-info {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+
+    .contact-icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    h3 {
+      color: @secondary-color;
+      font-weight: 600;
+    }
+
+    a {
+      color: @secondary-color;
+      text-decoration:underline;
+      display: block;
+    }
+
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   header,

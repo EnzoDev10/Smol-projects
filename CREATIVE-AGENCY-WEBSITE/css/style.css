@@ -285,6 +285,59 @@ a:visited {
 .work .launch-container:hover {
   opacity: 1;
 }
+/* CONTACT PAGE */
+.form-container {
+  margin: 50px 0;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-container form *:not([type=submit]) {
+  padding: 10px;
+  border: 1px solid #888;
+}
+.form-container form textarea {
+  height: 125px;
+  resize: none;
+}
+.form-container form .btn {
+  padding: 10px 0;
+  letter-spacing: 2px;
+  color: #f9f9f9;
+  background-color: #1b206e;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.form-container form .btn:hover {
+  transform: scale(0.98);
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-bottom: 100px;
+}
+.contact-container .contact-info {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+.contact-container .contact-info .contact-icon {
+  width: 25px;
+  height: 25px;
+}
+.contact-container .contact-info h3 {
+  color: #1b206e;
+  font-weight: 600;
+}
+.contact-container .contact-info a {
+  color: #1b206e;
+  text-decoration: underline;
+  display: block;
+}
 @media screen and (min-width: 768px) {
   header,
   .text,
