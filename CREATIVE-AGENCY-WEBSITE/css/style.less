@@ -22,7 +22,7 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   color: @dark-color;
-  background-color: @medium-color;
+  background-color: @light-color;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -30,7 +30,6 @@ body {
   justify-content: space-between;
   padding-top: 10px;
   overflow-x: hidden;
-
 }
 
 header {
@@ -265,7 +264,6 @@ a:visited {
     transition: all 0.3s;
     background-color: rgba(0, 0, 0, 0.5);
 
-
     .launch {
       position: absolute;
       top: 50%;
@@ -289,51 +287,62 @@ a:visited {
 
 /* CONTACT PAGE */
 
-.form-container {
+.wrapper {
+  display: grid;
   margin: 50px 0;
+}
 
+.form-container {
   form {
+    background-color: @medium-color;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    width: 95%;
 
-    *:not([type=submit]) {
-      padding: 10px;
-      border: 1px solid #888;
-    }
+    .row {
+      * {
+        width: 100%;
+      }
 
-    textarea {
-      height: 125px;
-      resize: none;
-    }
+      .input50 *,
+      .input100 * {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #888;
+      }
 
-    .btn {
-      padding: 10px 0;
-      letter-spacing: 2px;
-      color: @medium-color;
-      background-color: @secondary-color;
-      cursor: pointer;
-      transition: all 0.5s;
+      textarea {
+        height: 125px;
+        resize: none;
+      }
 
-
-      &:hover {
-        transform: scale(0.98);
+      input[type="submit"] {
+        background-color: @secondary-color;
+        color: @light-color;
+        padding: 5px 0;
+        letter-spacing: 2px;
+        border: none;
+        margin-bottom: 0;
       }
     }
   }
 }
 
 .contact-container {
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 250px;
-  margin-bottom: 100px;
-
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: @medium-color;
   .contact-info {
+    width: 100%;
     display: flex;
-    gap: 30px;
-    padding: 10px;
+    margin: 0 auto;
+    gap: 15px;
 
     .contact-icon {
       width: 25px;
@@ -341,19 +350,17 @@ a:visited {
     }
 
     h3 {
+      font-size: 1em;
       color: @secondary-color;
       font-weight: 600;
     }
 
     a {
       color: @secondary-color;
-      text-decoration:underline;
-      display: block;
+      text-decoration: underline;
     }
-
   }
 }
-
 
 @media screen and (min-width: 768px) {
   header,
@@ -408,19 +415,37 @@ a:visited {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  footer {
-    .menu {
-      .navigation {
-        ul {
-          li {
-            font-size: 2em;
+  .works {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .wrapper {
+    grid-template-columns: 7fr 2fr;
+
+    .form-container {
+      form {
+        .row {
+          .input50 {
+            display: flex;
+            gap: 15px;
+            .input50 * {
+              width: 50%;
+            }
           }
         }
       }
     }
   }
+}
 
-  .works {
-    grid-template-columns: repeat(4, 1fr);
+footer {
+  .menu {
+    .navigation {
+      ul {
+        li {
+          font-size: 2em;
+        }
+      }
+    }
   }
 }
