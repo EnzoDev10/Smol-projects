@@ -119,6 +119,8 @@ footer .menu {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: absolute;
+  top: 25%;
 }
 footer .menu .social-bar {
   height: 100%;
@@ -143,13 +145,16 @@ footer .menu .navigation ul li {
   font-weight: 300;
   margin: 5px 0;
 }
-footer .menu .navigation ul li a:hover {
+footer .menu .navigation ul li a:link,
+footer .menu .navigation ul li a:visited {
+  color: #111;
+}
+footer .menu .navigation ul li a:hover,
+footer .menu .navigation ul li a:focus {
   color: #f60f20;
 }
 footer.active {
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -354,6 +359,9 @@ a:visited {
   main {
     padding: 0 35px;
   }
+  footer .menu {
+    position: static;
+  }
   footer .menu .social-bar {
     transform: scale(0.8);
   }
@@ -363,9 +371,6 @@ a:visited {
   .works {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 100px;
-  }
-  .contact-container {
-    margin-top: 0;
   }
 }
 @media screen and (min-width: 1068px) {
@@ -378,7 +383,11 @@ a:visited {
     align-items: center;
     justify-content: flex-start;
   }
+  .home-main .home-text {
+    margin-top: 150px;
+  }
   .home-main .home-img {
+    height: 100vh;
     display: block;
     position: absolute;
     top: 0;
@@ -393,12 +402,15 @@ a:visited {
   .wrapper {
     grid-template-columns: 7fr 2fr;
   }
-  .wrapper .form-container form .row .input50 {
+  .wrapper .row .input50 {
     display: flex;
     gap: 15px;
   }
-  .wrapper .form-container form .row .input50 .input50 * {
+  .wrapper .row .input50 .input50 * {
     width: 50%;
+  }
+  .wrapper .contact-container {
+    margin-top: 0;
   }
 }
 footer .menu .navigation ul li {

@@ -36,7 +36,6 @@ header {
   padding-left: 15px;
 
   .logo {
-
     font-size: 1.3em;
     cursor: pointer;
   }
@@ -85,6 +84,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: absolute;
+    top: 25%;
 
     .social-bar {
       height: 100%;
@@ -112,7 +113,13 @@ footer {
           font-weight: 300;
           margin: 5px 0;
 
-          a:hover {
+          a:link,
+          a:visited {
+            color: @dark-color;
+          }
+
+          a:hover,
+          a:focus {
             color: @primary-color;
           }
         }
@@ -123,8 +130,6 @@ footer {
 
 footer.active {
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -373,7 +378,9 @@ a:visited {
   }
 
   footer {
+    
     .menu {
+      position: static;
       .social-bar {
         transform: scale(0.8);
       }
@@ -388,10 +395,6 @@ a:visited {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 100px;
   }
-
-  .contact-container {
-    margin-top: 0;
-  }
 }
 
 @media screen and (min-width: 1068px) {
@@ -405,7 +408,13 @@ a:visited {
     align-items: center;
     justify-content: flex-start;
 
+    .home-text{
+      margin-top: 150px;
+    }
+
     .home-img {
+      
+      height:100vh;
       display: block;
       position: absolute;
       top: 0;
@@ -424,18 +433,18 @@ a:visited {
   .wrapper {
     grid-template-columns: 7fr 2fr;
 
-    .form-container {
-      form {
-        .row {
-          .input50 {
-            display: flex;
-            gap: 15px;
-            .input50 * {
-              width: 50%;
-            }
-          }
+    .row {
+      .input50 {
+        display: flex;
+        gap: 15px;
+        .input50 * {
+          width: 50%;
         }
       }
+    }
+
+    .contact-container {
+      margin-top: 0;
     }
   }
 }
