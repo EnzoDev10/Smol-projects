@@ -46,6 +46,22 @@ header .search {
 header .search:focus {
   outline: 4px solid #7c0000;
 }
+#splash {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cc0000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 2s;
+}
+#splash.fade {
+  opacity: 0;
+}
 .subheader {
   background-color: #7c0000;
   color: #fff;
