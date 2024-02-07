@@ -36,10 +36,6 @@ body {
 	box-shadow: 3px 3px 10px @gray;
 }
 
-
-.invisible-text {
-  visibility: hidden;
-}
 /* HEADER AND SUBHEADER */
 
 header {
@@ -119,10 +115,12 @@ header {
   gap: 5px;
 
   .item {
+    position: relative;
     border: 1px solid @light-gray;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    min-height:100px;
 
     p {
       color: @secondary-color;
@@ -131,9 +129,12 @@ header {
     }
 
     img {
+      position:absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 10px;
+      margin-bottom: 10px;
       width: 30px;
-      margin-top: 5px;
-      align-self: flex-end;
     }
   }
 }
@@ -168,4 +169,23 @@ footer {
     }
   }
 
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    .item {
+
+      h4 {
+        font-size: 18px;
+      }
+
+      p, span {
+        font-size: 18px;
+
+      }
+    }
+  }
 }
