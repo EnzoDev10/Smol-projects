@@ -1,23 +1,14 @@
-:root {
-	--primary--color: #cc0000;
-	--secondary-color: #7c0000;
-  --white: #fff;
-  --light-gray:#ccc;
-  --gray: #888;
-}
-
+/* Colors */
+/* GENERAL  */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 html,
 body {
   height: 100%;
 }
-
 body {
   font-family: "Robot0", sans-serif;
 }
-
