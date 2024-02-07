@@ -35,7 +35,7 @@ header .logo {
   margin-bottom: 10px;
 }
 header .search {
-  width: 250px;
+  min-width: 350px;
   border: 0;
   padding: 5px;
   border-radius: 3px;
@@ -55,6 +55,9 @@ header .search:focus {
   justify-content: center;
   align-items: center;
   transition: opacity 2s;
+}
+#splash .splash-logo {
+  width: 250px;
 }
 #splash.fade {
   opacity: 0;
