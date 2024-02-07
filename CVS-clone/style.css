@@ -12,10 +12,13 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   overflow: none;
+  display: flex;
+  flex-direction: column;
 }
 body .content {
   width: 90%;
   margin: 0 auto;
+  flex: 1 0 auto;
 }
 .invisible-text {
   visibility: hidden;
@@ -63,6 +66,7 @@ header .search:focus {
 /* _ */
 /* GRID */
 .grid-container {
+  height: fit-content;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,4 +87,30 @@ header .search:focus {
   width: 30px;
   margin-top: 5px;
   align-self: flex-end;
+}
+/* FOOTER */
+footer {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 90%;
+  display: flex;
+  flex-shrink: 0;
+}
+footer ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 300ms;
+}
+footer ul li:hover {
+  transform: scale(1.2);
 }
