@@ -13,6 +13,13 @@ body {
   font-family: "Roboto", sans-serif;
   overflow: none;
 }
+body .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.invisible-text {
+  visibility: hidden;
+}
 /* HEADER AND SUBHEADER */
 header {
   background-color: #cc0000;
@@ -54,3 +61,26 @@ header .search:focus {
   width: 40px;
 }
 /* _ */
+/* GRID */
+.grid-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.grid-container .item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .item p {
+  color: #7c0000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.grid-container .item img {
+  width: 30px;
+  margin-top: 5px;
+  align-self: flex-end;
+}

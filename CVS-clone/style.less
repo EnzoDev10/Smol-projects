@@ -22,12 +22,21 @@ body {
 body {
 	font-family: "Roboto", sans-serif;
   overflow: none;
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .shadow() {
 	box-shadow: 3px 3px 10px @gray;
 }
 
+
+.invisible-text {
+  visibility: hidden;
+}
 /* HEADER AND SUBHEADER */
 
 header {
@@ -78,4 +87,32 @@ header {
 
 /* _ */
 
+/* GRID */
 
+.grid-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+
+  .item {
+    border: 1px solid @light-gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: @secondary-color;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    img {
+      width: 30px;
+      margin-top: 5px;
+      align-self: flex-end;
+    }
+  }
+
+  
+}
