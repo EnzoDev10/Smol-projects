@@ -1,5 +1,11 @@
 @media screen and (min-width: 768px) {
-    .news-input {
+	.news-input {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+    .learn-img {
         width: 50%;
     }
 }
