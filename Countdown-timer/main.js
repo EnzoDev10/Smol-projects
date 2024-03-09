@@ -2,7 +2,6 @@ const stopPlayIcon = document.getElementById("stop-play");
 
 stopPlayIcon.addEventListener("click", () => {
 	if (stopPlayIcon.src.endsWith("/pause.svg")) {
-		console.log(stopPlayIcon.src);
 		stopPlayIcon.src = "media\\play.svg";
 	} else {
 		stopPlayIcon.src = "media\\pause.svg";
@@ -21,7 +20,7 @@ let countDownDate = new Date(now + 3600000);
 
 // 3 Set an interval that updates every one second and inside:
 
-setInterval(() => {
+let CountDownUpdate = setInterval(() => {
 	now = new Date().getTime();
 	// 4 Find the distance between both dates
 	let distance = countDownDate - now;
@@ -34,10 +33,16 @@ setInterval(() => {
 
 	let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+	// 6 Display the result in the element with id of "timer"
+
 	document.getElementById("timer").innerHTML =
 		hours + " : " + minutes + " : " + seconds;
+
+	// 7 If the count down is finished, write a message
+
+	if (distance < 0) {
+		clearInterval(CountDownUpdate);
+		document.getElementById("timer").innerHTML = "0 : 0: 0";
+		document.getElementById("message").innerHTML = "The countdown is finished";
+	}
 }, 1000);
-
-// Display the result in the element with id of "timer"
-
-// If the count down is finished, write a message
