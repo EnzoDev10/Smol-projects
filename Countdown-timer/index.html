@@ -11,19 +11,21 @@
 			href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
 			rel="stylesheet"
 		/>
-        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 		<title>Countdown timer</title>
 	</head>
 	<body>
 		<main>
 			<div class="time-container">
-				<h1>time goes here</h1>
+				<h1 id="timer">time goes here</h1>
 			</div>
 			<div class="btns-container">
-				<button><img class="player-icon" src="media/pause.svg" /></button
+				<button>
+					<img class="player-icon" src="media/pause.svg" id="stop-play" /></button
 				><button><img class="player-icon" src="media/square.svg" /></button
 				><button><img class="player-icon" src="media/reset.svg" /></button>
 			</div>
+            <h2 id="message"></h2>
 		</main>
 	</body>
 	<script src="main.js"></script>
