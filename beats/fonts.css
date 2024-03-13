@@ -38,18 +38,26 @@
 	font-display: swap;
 }
 
-
-.roboto-thin {
-	font-family: "Roboto", sans-serif;
-	font-weight: 100;
+@font-face {
+	font-family: "Metropolis Med";
+	src: url("fonts/Metropolis-Medium.woff2") format("woff2");
+	font-weight: 500;
 	font-style: normal;
+	font-display: swap;
 }
 
-.roboto-light-italic {
+
+.roboto-thin-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+  }
+  
+  .roboto-light-italic {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-style: italic;
-}
+  }
 
 .met-extra {
     font-family: 'Metropolis Extra';
