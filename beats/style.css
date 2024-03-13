@@ -17,14 +17,12 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 .navbar,
 .container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
-}
-.container {
-  padding: 60px 0;
 }
 img {
   vertical-align: middle;
@@ -63,13 +61,58 @@ img {
 /* __ */
 /* Product Styles */
 .product-container {
+  padding: 60px 0;
   text-align: center;
 }
 .product-container h2 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
 }
 .product-container p {
   font-size: 1.2rem;
+}
+/* __ */
+/* Info Styles */
+.info-section .container {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
+}
+.info-section .container .info-text {
+  width: 60%;
+}
+.info-section .container .info-text h2 {
+  text-decoration: underline;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.info-section .container .info-text p {
+  font-size: 1.4rem;
+}
+.info-section .battery-container {
+  background-image: url(images/battery-img.png);
+  background-position: right;
+}
+.info-section .design-container {
+  background-image: url(images/info-red-back.png);
+  background-position: left;
+  justify-content: flex-end;
+}
+.info-section .design-container .info-text {
+  text-align: right;
+}
+.info-section .cushion-container {
+  background-image: url(images/purple-img.png);
+  background-position: right;
+}
+.info-section .controls-container {
+  background-image: url(images/Easy-Tap-img.png);
+  background-position: right;
+  align-items: flex-start;
+}
+.info-section .controls-container .info-text {
+  margin-top: 200px;
 }
 /* __ */
