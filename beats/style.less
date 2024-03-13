@@ -51,6 +51,19 @@ img {
 		display: flex;
 		align-items: center;
 		gap: 30px;
+
+        .nav-item {
+            font-size: 1.3rem;
+            transition:transform 200ms;
+            &:hover {
+                transform: translateY(-5px);
+            
+                a {
+                    color: red;
+                }
+            }
+
+        }
 	}
 }
 

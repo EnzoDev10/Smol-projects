@@ -40,6 +40,16 @@ img {
   align-items: center;
   gap: 30px;
 }
+.navbar ul .nav-item {
+  font-size: 1.3rem;
+  transition: transform 200ms;
+}
+.navbar ul .nav-item:hover {
+  transform: translateY(-5px);
+}
+.navbar ul .nav-item:hover a {
+  color: red;
+}
 #about-boat {
   background-color: #000000;
   color: #fff;
