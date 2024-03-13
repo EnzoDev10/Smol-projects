@@ -33,10 +33,16 @@ body {
 	margin: 0 auto;
 }
 
+.container {
+	padding: 60px 0;
+}
+
 img {
 	vertical-align: middle;
 	max-width: 100%;
 }
+
+/* __ */
 
 /* Navbar Styles */
 
@@ -52,22 +58,46 @@ img {
 		align-items: center;
 		gap: 30px;
 
-        .nav-item {
-            font-size: 1.3rem;
-            transition:transform 200ms;
-            &:hover {
-                transform: translateY(-5px);
-            
-                a {
-                    color: red;
-                }
-            }
+		.nav-item {
+			font-size: 1.3rem;
+			transition: transform 200ms;
+			&:hover {
+				transform: translateY(-5px);
 
-        }
+				a {
+					color: red;
+				}
+			}
+		}
 	}
 }
+
+/* __ */
+
+/* About Styles (Left for the end, as i need an image from Brian) */
 
 #about-boat {
 	background-color: @Dark-color;
 	color: @Light-color;
 }
+
+/* __ */
+
+/* Product Styles */
+
+.product-container {
+    text-align: center;
+
+	h2 {
+		font-size: 2.8rem;
+		margin-bottom: 20px;
+	}
+
+    p {
+		font-size: 1.2rem;
+	}
+}
+
+
+/* __ */
+

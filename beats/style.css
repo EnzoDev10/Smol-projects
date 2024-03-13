@@ -23,10 +23,14 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+.container {
+  padding: 60px 0;
+}
 img {
   vertical-align: middle;
   max-width: 100%;
 }
+/* __ */
 /* Navbar Styles */
 .navbar {
   background-color: #fff;
@@ -50,7 +54,22 @@ img {
 .navbar ul .nav-item:hover a {
   color: red;
 }
+/* __ */
+/* About Styles (Left for the end, as i need an image from Brian) */
 #about-boat {
   background-color: #000000;
   color: #fff;
 }
+/* __ */
+/* Product Styles */
+.product-container {
+  text-align: center;
+}
+.product-container h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.product-container p {
+  font-size: 1.2rem;
+}
+/* __ */
