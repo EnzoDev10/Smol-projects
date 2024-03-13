@@ -1,6 +1,9 @@
 Producto Sobre boAt Contacto (Metropolis Light 27.55 pt [tamaño])
 
 met-Light
+met-bold
+met-semi-bold
+met-black
 roboto thin Italic
 roboto light italic
 

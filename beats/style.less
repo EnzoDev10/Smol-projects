@@ -1,5 +1,60 @@
+/* General Styles */
+
+@Dark-color: #000000;
+@Light-color: #fff;
+@Gray-color: #8c8a8a;
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: @Dark-color;
+}
+
+li {
+	list-style: none;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.navbar,
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+/* Navbar Styles */
+
+.navbar {
+	background-color: @Light-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+}
+
+#about-boat {
+	background-color: @Dark-color;
+	color: @Light-color;
 }

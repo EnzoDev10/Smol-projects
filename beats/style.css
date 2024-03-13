@@ -1,5 +1,46 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+li {
+  list-style: none;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.navbar,
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#about-boat {
+  background-color: #000000;
+  color: #fff;
 }
