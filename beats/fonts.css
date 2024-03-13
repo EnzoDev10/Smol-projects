@@ -46,45 +46,50 @@
 	font-display: swap;
 }
 
-
 .roboto-thin-italic {
 	font-family: "Roboto", sans-serif;
 	font-weight: 100;
 	font-style: italic;
-  }
-  
-  .roboto-light-italic {
+}
+
+.roboto-light-italic {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-style: italic;
-  }
+}
 
 .met-extra {
-    font-family: 'Metropolis Extra';
-    font-weight: 200;
-    font-style: normal;
+	font-family: "Metropolis Extra";
+	font-weight: 200;
+	font-style: normal;
 }
 
 .met-light {
-    font-family: 'Metropolis';
-    font-weight: 300;
-    font-style: normal;
+	font-family: "Metropolis";
+	font-weight: 300;
+	font-style: normal;
+}
+
+.met-med {
+	font-family: "Metropolis Med";
+	font-weight: 500;
+	font-style: normal;
 }
 
 .met-semibold {
-    font-family: 'Metropolis Semi';
-    font-weight: 600;
-    font-style: normal;
+	font-family: "Metropolis Semi";
+	font-weight: 600;
+	font-style: normal;
 }
 
 .met-bold {
-    font-family: 'Metropolis';
-    font-weight: bold;
-    font-style: normal;
+	font-family: "Metropolis";
+	font-weight: bold;
+	font-style: normal;
 }
 
 .met-black {
-    font-family: 'Metropolis';
-    font-weight: 900;
-    font-style: normal;
+	font-family: "Metropolis";
+	font-weight: 900;
+	font-style: normal;
 }

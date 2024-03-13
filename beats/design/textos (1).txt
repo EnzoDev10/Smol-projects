@@ -1,12 +1,5 @@
 Producto Sobre boAt Contacto (Metropolis Light 27.55 pt [tamaño])
 
-met-Light
-met-bold
-met-semi-bold
-met-black
-roboto thin Italic
-roboto light italic
-
 
 Leap into (Metropolis Extra Light 48.37 pt)
 Extra Savings (Metropolis Semi Bold 48.37 pt)
@@ -26,6 +19,9 @@ An ear cup that doubles as a control panel, the Rockerz 600 are truly the wirele
 
 Easy Tap Controls (Metropolis Black 61 pt)
 Built on the side of the earphones that allow for seamless connectivity between calling and music, down to every detail including the in-built mic. (Roboto Light Italic 24 pt)
+
+
+
 
 Category 	Headphones
 Headphone 	Type On-Ear
@@ -59,6 +55,16 @@ Wireless Headphones
 Wireless Speakers
 Mobile Accesories
 Trendel
+
+.met-extra
+.met-light
+.met-med
+.met-semibold
+.met-bold
+.met-black
+.roboto-thin-italic
+.roboto-light-italic
+
 
 Help
 Track Your Order
