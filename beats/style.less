@@ -3,9 +3,9 @@
 @Dark-color: #000000;
 @Light-color: #fff;
 @Gray-color: #8c8a8a;
-@logo-color:#ed1c24;
+@logo-color: #ed1c24;
 
-@light-red:#ff0009;
+@light-red: #ff0009;
 @dark-red: #710004;
 
 * {
@@ -161,5 +161,50 @@ img {
 		background-position: right;
 	}
 }
+
+/* __ */
+
+/* Table Styles */
+
+.table-section {
+	background-image: url(images/Cuadro_de_info_Sin_Tabla.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 15px;
+	border-radius: 20px;
+
+
+	.container {
+		display: flex;
+		align-items: center;
+
+
+		table {
+			background-color: @Dark-color;
+			width: 50%;
+			margin-top: 20px;
+	
+			tbody {
+				color: @Light-color;
+	
+				td:first-child {
+					color: @Gray-color;
+				}	
+
+				th,td {
+					padding: 10px;
+					border-right: 5px solid transparent;
+					background-clip: padding-box;
+
+				}
+			}
+		}
+	}
+
+	
+
+}
+
 
 /* __ */
