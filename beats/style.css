@@ -212,8 +212,8 @@ footer .container {
   display: flex;
   justify-content: space-around;
 }
-footer .container .newsletter-container *:not(img) {
-  margin-bottom: 10px;
+footer .container .newsletter-container *:not(.email-icon) {
+  margin-bottom: 15px;
 }
 footer .container .newsletter-container .email-container {
   display: flex;
