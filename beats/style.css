@@ -50,7 +50,7 @@ img {
   transform: translateY(-5px);
 }
 .navbar ul .nav-item:hover a {
-  color: red;
+  color: #ed1c24;
 }
 /* __ */
 /* About Styles (Left for the end, as i need an image from Brian) */
@@ -69,7 +69,7 @@ img {
   margin-bottom: 20px;
 }
 .product-container p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 /* __ */
 /* Info Styles */
