@@ -162,7 +162,7 @@ footer .container {
   display: flex;
   justify-content: space-around;
 }
-footer .container .newsletter-container * {
+footer .container .newsletter-container *:not(img) {
   margin-bottom: 10px;
 }
 footer .container .newsletter-container .email-container {
