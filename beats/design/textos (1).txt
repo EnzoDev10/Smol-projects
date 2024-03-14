@@ -1,5 +1,14 @@
-Producto Sobre boAt Contacto (Metropolis Light 27.55 pt [tamaño])
+Degradado de la imagen de presentacion: 
+	Centro (Mas oscuro) #111111
+	Parte mas lejana (Mas claro) #202020
+Logo:
+	Rojo: #ed1c24
+Degradado de Cuadro de información:
+	Rojo (claro): #ff0009
+	Rojo (oscuro): #710004
+	
 
+Producto Sobre boAt Contacto (Metropolis Light 27.55 pt [tamaño])
 
 Leap into (Metropolis Extra Light 48.37 pt)
 Extra Savings (Metropolis Semi Bold 48.37 pt)
