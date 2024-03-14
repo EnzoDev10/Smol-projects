@@ -92,11 +92,10 @@ img {
   font-size: 1.4rem;
 }
 .info-section .battery-container {
-  background-image: url(images/battery-img.png);
-  background-position: right;
+  background-image: url(images/battery-img.webp);
 }
 .info-section .design-container {
-  background-image: url(images/info-red-back.png);
+  background-image: url(images/info-red-back.webp);
   background-position: left;
   justify-content: flex-end;
 }
@@ -104,15 +103,18 @@ img {
   text-align: right;
 }
 .info-section .cushion-container {
-  background-image: url(images/purple-img.png);
-  background-position: right;
+  background-image: url(images/purple-img.webp);
 }
 .info-section .controls-container {
-  background-image: url(images/Easy-Tap-img.png);
-  background-position: right;
+  background-image: url(images/Easy-Tap-img.webp);
   align-items: flex-start;
 }
 .info-section .controls-container .info-text {
   margin-top: 200px;
+}
+.info-section .battery-container,
+.info-section .cushion-container,
+.info-section .controls-container {
+  background-position: right;
 }
 /* __ */
