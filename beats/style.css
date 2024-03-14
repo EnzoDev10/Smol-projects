@@ -34,6 +34,9 @@ img {
   vertical-align: middle;
   max-width: 100%;
 }
+.break-line {
+  display: block;
+}
 /* __ */
 /* Navbar Styles */
 .navbar {
@@ -59,8 +62,55 @@ img {
 /* About Styles (Left for the end, as i need an image from Brian) */
 #about-boat {
   margin: 0;
-  background-color: #000000;
+  background-image: url(images/Imagen_de_Presentacion_Solo_el_logo.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #202020;
   color: #fff;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+#about-boat .flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#about-boat .flex-container .text-container {
+  margin-top: 20px;
+  width: 60%;
+}
+#about-boat .flex-container .text-container * {
+  margin-bottom: 10px;
+}
+#about-boat .flex-container .text-container h1 {
+  font-size: 3em;
+}
+#about-boat .flex-container .text-container h1 .red-text {
+  color: #ff0009;
+}
+#about-boat .flex-container .text-container p {
+  color: #dfdfdf;
+  font-size: 1.5em;
+}
+#about-boat .flex-container .icons-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+#about-boat .flex-container .icons-container .icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#about-boat .flex-container .icons-container img {
+  width: 90px;
+  height: 90px;
+}
+#about-boat .flex-container .icons-container .icon-text {
+  color: #ffc41c;
+  font-size: 2.3em;
 }
 /* __ */
 /* Product Styles */

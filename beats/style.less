@@ -9,6 +9,7 @@
 
 @light-red: #ff0009;
 @dark-red: #710004;
+@yellow-color: #ffc41c;
 
 * {
 	margin: 0;
@@ -53,6 +54,10 @@ img {
 	max-width: 100%;
 }
 
+.break-line {
+	display: block;
+}
+
 /* __ */
 
 /* Navbar Styles */
@@ -85,8 +90,67 @@ img {
 
 #about-boat {
 	margin: 0;
-	background-color: @Dark-color;
+	background-image: url(images/Imagen_de_Presentacion_Solo_el_logo.webp);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #202020;
 	color: @white-color;
+	height: 600px;
+	display: flex;
+	align-items: center;
+
+	.flex-container {
+		display: flex;
+		justify-content: flex-end;
+
+		.text-container {
+			margin-top: 20px;
+			width: 60%;
+
+			* {
+				margin-bottom: 10px;
+			}
+
+			h1 {
+				font-size: 3em;
+
+				.red-text {
+					color: @light-red;
+				}
+			}
+
+			p {
+				color: @light-Gray-color;
+				font-size: 1.5em;
+			}
+		}
+
+		.icons-container {
+			padding-top: 40px;
+			display: flex;
+			justify-content: center;
+			gap: 75px;
+
+			.icon {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+			}
+
+			img {
+				width: 90px;
+				height: 90px;
+			}
+
+			.icon-text {
+				color: @yellow-color;
+				font-size: 2.3em;
+			}
+
+		}
+		
+	}
 }
 
 /* __ */
