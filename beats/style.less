@@ -1,8 +1,10 @@
 /* General Styles */
 
 @Dark-color: #000000;
-@Light-color: #fff;
-@Gray-color: #8c8a8a;
+@white-color: #fff;
+
+@dark-gray-color: #bfbfbf;
+@light-Gray-color: #dfdfdf;
 @logo-color: #ed1c24;
 
 @light-red: #ff0009;
@@ -19,6 +21,10 @@ a:active,
 a:visited {
 	text-decoration: none;
 	color: @Dark-color;
+}
+
+a:hover {
+	color: @logo-color;
 }
 
 li {
@@ -38,6 +44,10 @@ body {
 	margin: 0 auto;
 }
 
+section {
+	margin: 50px 0;
+}
+
 img {
 	vertical-align: middle;
 	max-width: 100%;
@@ -48,7 +58,7 @@ img {
 /* Navbar Styles */
 
 .navbar {
-	background-color: @Light-color;
+	background-color: @white-color;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -64,10 +74,6 @@ img {
 			transition: transform 200ms;
 			&:hover {
 				transform: translateY(-5px);
-
-				a {
-					color: @logo-color;
-				}
 			}
 		}
 	}
@@ -78,8 +84,9 @@ img {
 /* About Styles (Left for the end, as i need an image from Brian) */
 
 #about-boat {
+	margin: 0;
 	background-color: @Dark-color;
-	color: @Light-color;
+	color: @white-color;
 }
 
 /* __ */
@@ -191,13 +198,83 @@ img {
 				}
 
 				td:first-child {
-					color: @Gray-color;
+					color: @light-Gray-color;
 				}
 
 				td:nth-child(2) {
-					color: @Light-color;
+					color: @white-color;
 					padding-left: 40px;
 				}
+			}
+		}
+	}
+}
+
+/* __ */
+
+/* Footer Styles */
+
+footer {
+	background-color: @light-Gray-color;
+
+	.container {
+		padding: 40px;
+		display: flex;
+		justify-content: space-around;
+
+		.newsletter-container {
+			* {
+				margin-bottom: 10px;
+			}
+
+			.email-container {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+
+				input {
+					color: @Dark-color;
+					all: unset;
+					background-color: @dark-gray-color;
+					padding: 10px 45px 10px 10px;
+					border-radius: 5px;
+					font-size: 1.1rem;
+
+					&::placeholder {
+						font-family: "Metropolis", sans-serif;
+						color: @Dark-color;
+					}
+				}
+
+				img {
+					background-color: @logo-color;
+					padding: 5px;
+					border-radius: 100%;
+				}
+			}
+
+			h3 {
+				font-size: 2rem;
+			}
+		}
+
+		.footer-links {
+			display: flex;
+			gap: 50px;
+			font-size: 1.2rem;
+
+			.flex {
+				display: flex;
+				gap: 20px;
+			}
+
+			.footer-heading {
+				font-size: 1.4rem;
+			}
+
+			li,
+			.footer-heading {
+				margin-bottom: 10px;
 			}
 		}
 	}

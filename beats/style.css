@@ -10,6 +10,9 @@ a:visited {
   text-decoration: none;
   color: #000000;
 }
+a:hover {
+  color: #ed1c24;
+}
 li {
   list-style: none;
 }
@@ -23,6 +26,9 @@ body {
 .container {
   width: 95%;
   margin: 0 auto;
+}
+section {
+  margin: 50px 0;
 }
 img {
   vertical-align: middle;
@@ -49,12 +55,10 @@ img {
 .navbar ul .nav-item:hover {
   transform: translateY(-5px);
 }
-.navbar ul .nav-item:hover a {
-  color: #ed1c24;
-}
 /* __ */
 /* About Styles (Left for the end, as i need an image from Brian) */
 #about-boat {
+  margin: 0;
   background-color: #000000;
   color: #fff;
 }
@@ -142,10 +146,64 @@ img {
   padding-bottom: 10px;
 }
 .table-section .container table tbody td:first-child {
-  color: #8c8a8a;
+  color: #dfdfdf;
 }
 .table-section .container table tbody td:nth-child(2) {
   color: #fff;
   padding-left: 40px;
+}
+/* __ */
+/* Footer Styles */
+footer {
+  background-color: #dfdfdf;
+}
+footer .container {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .newsletter-container * {
+  margin-bottom: 10px;
+}
+footer .container .newsletter-container .email-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer .container .newsletter-container .email-container input {
+  color: #000000;
+  all: unset;
+  background-color: #bfbfbf;
+  padding: 10px 45px 10px 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+footer .container .newsletter-container .email-container input::placeholder {
+  font-family: "Metropolis", sans-serif;
+  color: #000000;
+}
+footer .container .newsletter-container .email-container img {
+  background-color: #ed1c24;
+  padding: 5px;
+  border-radius: 100%;
+}
+footer .container .newsletter-container h3 {
+  font-size: 2rem;
+}
+footer .container .footer-links {
+  display: flex;
+  gap: 50px;
+  font-size: 1.2rem;
+}
+footer .container .footer-links .flex {
+  display: flex;
+  gap: 20px;
+}
+footer .container .footer-links .footer-heading {
+  font-size: 1.4rem;
+}
+footer .container .footer-links li,
+footer .container .footer-links .footer-heading {
+  margin-bottom: 10px;
 }
 /* __ */
