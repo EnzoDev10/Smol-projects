@@ -130,22 +130,22 @@ img {
 .table-section .container {
   display: flex;
   align-items: center;
+  height: 900px;
 }
 .table-section .container table {
   background-color: #000000;
   width: 50%;
   margin-top: 20px;
+  padding: 40px;
 }
-.table-section .container table tbody {
-  color: #fff;
+.table-section .container table tbody td {
+  padding-bottom: 10px;
 }
 .table-section .container table tbody td:first-child {
   color: #8c8a8a;
 }
-.table-section .container table tbody th,
-.table-section .container table tbody td {
-  padding: 10px;
-  border-right: 5px solid transparent;
-  background-clip: padding-box;
+.table-section .container table tbody td:nth-child(2) {
+  color: #fff;
+  padding-left: 40px;
 }
 /* __ */

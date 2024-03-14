@@ -174,37 +174,33 @@ img {
 	margin: 0 15px;
 	border-radius: 20px;
 
-
 	.container {
 		display: flex;
 		align-items: center;
-
+		height: 900px;
 
 		table {
 			background-color: @Dark-color;
 			width: 50%;
 			margin-top: 20px;
-	
+			padding: 40px;
+
 			tbody {
-				color: @Light-color;
-	
+				td {
+					padding-bottom: 10px;
+				}
+
 				td:first-child {
 					color: @Gray-color;
-				}	
+				}
 
-				th,td {
-					padding: 10px;
-					border-right: 5px solid transparent;
-					background-clip: padding-box;
-
+				td:nth-child(2) {
+					color: @Light-color;
+					padding-left: 40px;
 				}
 			}
 		}
 	}
-
-	
-
 }
-
 
 /* __ */
