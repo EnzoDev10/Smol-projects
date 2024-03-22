@@ -21,11 +21,57 @@
 			</div>
 			<div class="btns-container">
 				<button>
-					<img class="player-icon" src="media/pause.svg" id="stop-play" /></button
-				><button><img class="player-icon" src="media/square.svg" /></button
-				><button><img class="player-icon" src="media/reset.svg" /></button>
+					<img
+						class="player-icon"
+						src="media/pause.svg"
+						id="play-btn"
+					/></button
+				><button>
+					<img
+						class="player-icon"
+						src="media/reset.svg"
+						id="reset-btn"
+					/></button
+				><button>
+					<img class="player-icon" src="media/edit.svg" id="edit-btn" />
+				</button>
 			</div>
-            <h2 id="message"></h2>
+			<h2 id="message"></h2>
+			<div id="input-container">
+				<div>
+					<input
+						type="number"
+						name="hours-input"
+						id="hours-input"
+						min="0"
+						max="24"
+						value="1"
+					/>
+					<label for="hours-input">Hrs</label>
+				</div>
+				<div>
+					<input
+						type="number"
+						name="minutes-input"
+						id="minutes-input"
+						min="0"
+						max="59"
+						value="0"
+					/>
+					<label for="minutes-input">Mins</label>
+				</div>
+				<div>
+					<input
+						type="number"
+						name="seconds-input"
+						id="seconds-input"
+						min="0"
+						max="59"
+						value="0"
+					/>
+					<label for="seconds-input">Secs</label>
+				</div>
+			</div>
 		</main>
 	</body>
 	<script src="main.js"></script>

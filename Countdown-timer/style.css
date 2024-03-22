@@ -1,8 +1,17 @@
+input,
+button {
+  all: unset;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
 }
 html,
@@ -35,7 +44,6 @@ body main .btns-container {
   justify-content: space-evenly;
 }
 body main .btns-container button {
-  all: unset;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -53,4 +61,25 @@ body main .btns-container button:active {
 }
 body main .btns-container button .reset-icon {
   transform: rotateY(180deg);
+}
+body main #input-container {
+  padding: 20px;
+  background: rgba(232, 232, 228, 0.4);
+  border-radius: 10px;
+  display: none;
+  gap: 25px;
+}
+body main #input-container div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main #input-container div input {
+  font-size: 2rem;
+}
+body main #input-container div span {
+  font-size: 1.3rem;
+}
+body main #input-container.active {
+  display: flex;
 }

@@ -1,4 +1,4 @@
-const stopPlayIcon = document.getElementById("stop-play");
+const stopPlayIcon = document.getElementById("play-btn");
 
 stopPlayIcon.addEventListener("click", () => {
 	if (stopPlayIcon.src.endsWith("/pause.svg")) {
@@ -6,6 +6,13 @@ stopPlayIcon.addEventListener("click", () => {
 	} else {
 		stopPlayIcon.src = "media\\pause.svg";
 	}
+});
+
+const EditBtn = document.getElementById("edit-btn");
+const editTimer = document.getElementById("input-container");
+
+EditBtn.addEventListener("click", () => {
+	editTimer.classList.toggle("active");
 });
 
 // Timer Steps(MVP):
@@ -38,11 +45,11 @@ let CountDownUpdate = setInterval(() => {
 	document.getElementById("timer").innerHTML =
 		hours + " : " + minutes + " : " + seconds;
 
-	// 7 If the count down is finished, write a message
+	// 7 If the countdown is finished, write a message
 
 	if (distance < 0) {
 		clearInterval(CountDownUpdate);
-		document.getElementById("timer").innerHTML = "0 : 0: 0";
+		document.getElementById("timer").innerHTML = "00 : 00 : 00";
 		document.getElementById("message").innerHTML = "The countdown is finished";
 	}
 }, 1000);
