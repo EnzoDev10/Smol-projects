@@ -60,48 +60,76 @@
 	<body>
 		<header>
 			<nav class="navbar">
-				<button class="menu"><img src="icons/menu-bar-dark.svg" alt="Menu toggler"></button>
+				<button id="menu-toggler">
+					<img src="icons/light/menu-light.svg" alt="Menu toggler" />
+				</button>
 				<a href="#"
-					><img src="images/Logo.webp" alt="" width="120" height="50"
+					><img
+						class="logo"
+						src="icons/light/logo-light.svg"
+						alt=""
+						width="120"
+						height="50"
 				/></a>
-				<ul class="nav-menu met-light">
-					<li class="nav-item"><a href="#product">Producto</a></li>
-					<li class="nav-item"><a href="#about-boat">Sobre Boat</a></li>
-					<li class="nav-item"><a href="#footer">Contacto</a></li>
+				<ul class="met-light" id="nav-menu">
+					<li class="nav-item"><a href="#product">Producto</a><img src="icons/light/next-light.svg" alt=""></li>
+					<li class="nav-item"><a href="#about-boat">Tienda</a><img src="icons/light/next-light.svg" alt=""></li>
+					<li class="nav-item"><a href="#footer">Contacto</a><img src="icons/light/next-light.svg" alt=""></li>
 				</ul>
-				<button class="toggle"><img src="icons/toggler-light.svg" alt="Color Theme toggler"></button>
+				<button class="toggle icon">
+					<img src="icons/light/toggler-light.svg" alt="Color Theme toggler" />
+				</button>
 			</nav>
 		</header>
 		<main>
 			<section id="about-boat">
-					<div class="flex-container container">
-						<div class="text-container">
-							<h1 class="met-semibold">
-								<span class="red-text met-extra break-line">Leap into</span> Extra Savings
-							</h1>
-							<p class="roboto-thin-italic">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-								ipsum deleniti libero fuga odit eveniet molestias corrupti
-								blanditiis sunt, nulla quibusdam provident, doloremque minima
-								aperiam nisi tempora atque harum ab esse id, quo pariatur dolor!
-								Conqueror force, is holy shit en plan omg.
-							</p>
-							<div class="icons-container">
-								<div class="icon">
-									<img src="icons/price-icon.svg" alt="price icon" aria-hidden="true" />
-									<p class="roboto-light-italic icon-text">Best<span class="break-line">Price</span></p>
-								</div>
-								<div class="icon">
-									<img src="icons/quality-icon.svg" alt="quality icon" aria-hidden="true">
-									<p class="roboto-light-italic icon-text">Best <span class="break-line">Quality</span></p>
-								</div>
-								<div class="icon">
-									<img src="icons/security-icon.svg" alt="security icon" aria-hidden="true">
-									<p class="roboto-light-italic icon-text">Best <span class="break-line">Security</span></p>
-								</div>
+				<div class="flex-container container">
+					<div class="text-container">
+						<h1 class="met-semibold">
+							<span class="red-text met-extra break-line">Leap into</span> Extra
+							Savings
+						</h1>
+						<p class="roboto-thin-italic">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+							ipsum deleniti libero fuga odit eveniet molestias corrupti
+							blanditiis sunt, nulla quibusdam provident, doloremque minima
+							aperiam nisi tempora atque harum ab esse id, quo pariatur dolor!
+							Conqueror force, is holy shit en plan omg.
+						</p>
+						<div class="icons-container">
+							<div class="icon">
+								<img
+									src="icons/general/price-icon.svg"
+									alt="price icon"
+									aria-hidden="true"
+								/>
+								<p class="roboto-light-italic icon-text">
+									Best<span class="break-line">Price</span>
+								</p>
+							</div>
+							<div class="icon">
+								<img
+									src="icons/general/quality-icon.svg"
+									alt="quality icon"
+									aria-hidden="true"
+								/>
+								<p class="roboto-light-italic icon-text">
+									Best <span class="break-line">Quality</span>
+								</p>
+							</div>
+							<div class="icon">
+								<img
+									src="icons/general/security-icon.svg"
+									alt="security icon"
+									aria-hidden="true"
+								/>
+								<p class="roboto-light-italic icon-text">
+									Best <span class="break-line">Security</span>
+								</p>
 							</div>
 						</div>
 					</div>
+				</div>
 			</section>
 			<section id="#product">
 				<div class="container product-container">
@@ -120,6 +148,11 @@
 
 			<section class="info-section">
 				<div class="container battery-container">
+					<img
+						src="images/light/battery-light.png"
+						alt="showing one of the products"
+						aria-hidden="true"
+					/>
 					<div class="info-text">
 						<h2 class="met-black">Extended Battery</h2>
 						<p class="roboto-light-italic">
@@ -134,6 +167,11 @@
 			</section>
 			<section class="info-section">
 				<div class="container design-container">
+					<img
+						src="images/general/art-img.png"
+						alt="Showing one of the products: the revenge"
+						aria-hidden="true"
+					/>
 					<div class="info-text">
 						<h2 class="met-black">State Of The Art Design</h2>
 						<p class="roboto-light-italic">
@@ -147,6 +185,10 @@
 			</section>
 			<section class="info-section">
 				<div class="container cushion-container">
+					<img
+						src="images/general/cushion-img.png"
+						alt="Showing one of the products:tr"
+					/>
 					<div class="info-text">
 						<h2 class="met-black">Soft Ear Cushion</h2>
 						<p class="roboto-light-italic">
@@ -278,6 +320,7 @@
 
 			<section class="info-section">
 				<div class="container controls-container">
+					<img src="images/light/control-light.png" alt="" />
 					<div class="info-text">
 						<h2 class="met-black">Easy Tap Controls</h2>
 						<p class="roboto-light-italic">
@@ -286,6 +329,11 @@
 							including the in-built mic.
 						</p>
 					</div>
+					<div class="image-container">
+						<img src="images/general/google assistant logo.png" alt="" />
+						<img src="images/general/Siri.png" alt="" />
+						<img src="images/general/Siri logo.png" alt="" />
+					</div>
 				</div>
 			</section>
 		</main>
@@ -293,7 +341,7 @@
 			<div class="container">
 				<div class="newsletter-container">
 					<img
-						src="images/Logo.webp"
+						src="icons/light/logo-light.svg"
 						alt=""
 						width="225"
 						height="100"
@@ -301,7 +349,12 @@
 					/>
 					<div class="email-container met-med">
 						<input type="email" placeholder="Enter your email address..." />
-						<img src="icons/Email-icon.svg" class="email-icon" alt="email-icon" aria-hidden="true" />
+						<img
+							src="icons/Email-icon.svg"
+							class="email-icon"
+							alt="email-icon"
+							aria-hidden="true"
+						/>
 					</div>
 					<h3 class="met-med">Subscribe to our email newsletter!</h3>
 				</div>

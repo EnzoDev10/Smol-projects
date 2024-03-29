@@ -1,0 +1,120 @@
+// General Colors
+@yellow-color: #ffda64;
+@logo-color: #ed1c24;
+@gray-color: #232323;
+@light-text-color: #ffffff;
+@dark-text-color: #000000;
+
+// Light Theme Colors
+@light-main-bg-color: #ffffff;
+@light-secondary-bg-color: #d9d9d9;
+@line: #b3b3b3;
+@light-table-bg-color: #6f0000;
+
+// Dark Theme Colors
+@dark-main-bg-color: #202020;
+@dark-secondary-bg-color: #1a1a1a;
+@dark-table-bg-color: #131313;
+
+/* General Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.navbar,
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+button {
+	all: unset;
+}
+
+a,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: @dark-text-color;
+}
+
+a:hover {
+	color: @logo-color;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.break-line {
+	display: block;
+}
+
+header,
+footer {
+	background-color: @light-secondary-bg-color;
+	position: relative;
+}
+
+/* Navbar Styles */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0;
+
+	.logo {
+		height: 30px;
+	}
+
+	#menu-toggler {
+		z-index: 2;
+	}
+
+	#nav-menu {
+		display: none;
+	}
+
+	#nav-menu.active {
+		background-color: @light-secondary-bg-color;
+		padding: 75px 0;
+		width: 35%;
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		.nav-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 1.2rem;
+			border-bottom: solid 1px @line;
+			padding: 2px 10px;
+
+			img {
+				height: 1em;
+			}
+		}
+	}
+}
+/* __ */
