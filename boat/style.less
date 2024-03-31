@@ -29,6 +29,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
+	background-color: @light-main-bg-color;
 }
 
 .navbar,
@@ -136,7 +137,7 @@ footer {
 		gap: 25px;
 		align-items: center;
 		text-align: center;
-		padding: 35px 10px;
+		padding: 35px 0;
 
 		p {
 			font-size: 0.9rem;
@@ -176,9 +177,36 @@ footer {
 
 	h2 {
 		font-size: 1rem;
-		margin-bottom:15px;
+		margin-bottom: 15px;
+	}
+}
+/* __ */
+
+/* characteristics styles */
+.info-section {
+	text-align: center;
+	margin-bottom: 50px;
+
+	* {
+		margin-bottom: 25px;
 	}
 
+	h2 {
+		text-decoration: underline;
+		text-decoration-skip-ink: none;
+		text-underline-offset: 4px;
+	}
+
+	.image-container {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		font-size: 3rem;
+
+		img {
+			height: 1.5em;
+		}
+	}
 }
 
 /* __ */

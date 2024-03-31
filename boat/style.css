@@ -9,6 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 .navbar,
 .container {
@@ -97,7 +98,7 @@ footer {
   gap: 25px;
   align-items: center;
   text-align: center;
-  padding: 35px 10px;
+  padding: 35px 0;
 }
 #about-boat .text-container p {
   font-size: 0.9rem;
@@ -130,5 +131,28 @@ footer {
 #product h2 {
   font-size: 1rem;
   margin-bottom: 15px;
+}
+/* __ */
+/* characteristics styles */
+.info-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.info-section * {
+  margin-bottom: 25px;
+}
+.info-section h2 {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
+}
+.info-section .image-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 3rem;
+}
+.info-section .image-container img {
+  height: 1.5em;
 }
 /* __ */
