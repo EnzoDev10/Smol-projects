@@ -100,7 +100,7 @@ footer {
   padding: 35px 10px;
 }
 #about-boat .text-container p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 #about-boat .text-container .icons-container {
   width: 100%;
@@ -110,6 +110,7 @@ footer {
 }
 #about-boat .text-container .icons-container .icon {
   display: flex;
+  align-items: center;
   gap: 10px;
   font-size: 2rem;
   text-align: left;
@@ -120,4 +121,14 @@ footer {
 #about-boat .text-container .icons-container .icon span {
   display: block;
 }
-/*  */
+/* __ */
+/* presentation Styles */
+#product {
+  padding: 30px 0;
+  text-align: center;
+}
+#product h2 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+/* __ */
