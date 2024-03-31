@@ -35,12 +35,15 @@ img {
   max-width: 100%;
 }
 .break-line {
-  display: block;
+  display: inline;
 }
 header,
 footer {
   background-color: #d9d9d9;
   position: relative;
+}
+.red-text {
+  color: #ed1c24;
 }
 /* Navbar Styles */
 .navbar {
@@ -60,8 +63,9 @@ footer {
 }
 .navbar #nav-menu.active {
   background-color: #d9d9d9;
+  opacity: 0.9;
   padding: 75px 0;
-  width: 35%;
+  width: 50%;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -82,3 +86,38 @@ footer {
   height: 1em;
 }
 /* __ */
+/* About Styles */
+#about-boat {
+  background-color: #202020;
+  color: #ffffff;
+}
+#about-boat .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 35px 10px;
+}
+#about-boat .text-container p {
+  font-size: 0.8rem;
+}
+#about-boat .text-container .icons-container {
+  width: 100%;
+  display: flex;
+  color: #ffda64;
+  justify-content: space-around;
+}
+#about-boat .text-container .icons-container .icon {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+  text-align: left;
+}
+#about-boat .text-container .icons-container .icon img {
+  height: 1em;
+}
+#about-boat .text-container .icons-container .icon span {
+  display: block;
+}
+/*  */

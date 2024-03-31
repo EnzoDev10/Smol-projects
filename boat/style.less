@@ -62,13 +62,17 @@ img {
 }
 
 .break-line {
-	display: block;
+	display: inline;
 }
 
 header,
 footer {
 	background-color: @light-secondary-bg-color;
 	position: relative;
+}
+
+.red-text {
+	color: @logo-color;
 }
 
 /* Navbar Styles */
@@ -93,8 +97,9 @@ footer {
 
 	#nav-menu.active {
 		background-color: @light-secondary-bg-color;
+		opacity: 0.9;
 		padding: 75px 0;
-		width: 35%;
+		width: 50%;
 		z-index: 1;
 		position: absolute;
 		top: 0;
@@ -118,3 +123,46 @@ footer {
 	}
 }
 /* __ */
+
+/* About Styles */
+
+#about-boat {
+	background-color: @dark-main-bg-color;
+	color: @light-text-color;
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		align-items: center;
+		text-align: center;
+		padding: 35px 10px;
+
+		p {
+			font-size: 0.8rem;
+		}
+
+		.icons-container {
+			width: 100%;
+			display: flex;
+			color: @yellow-color;
+			justify-content: space-around;
+			.icon {
+				display: flex;
+				gap: 10px;
+				font-size: 2rem;
+				text-align: left;
+
+				img {
+					height: 1em;
+				}
+
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/*  */
