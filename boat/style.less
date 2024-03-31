@@ -2,13 +2,13 @@
 @yellow-color: #ffda64;
 @logo-color: #ed1c24;
 @gray-color: #232323;
-@light-text-color: #ffffff;
-@dark-text-color: #000000;
+@light-color: #ffffff;
+@dark-color: #000000;
 
 // Light Theme Colors
 @light-main-bg-color: #ffffff;
 @light-secondary-bg-color: #d9d9d9;
-@line: #b3b3b3;
+@line-color: #b3b3b3;
 @light-table-bg-color: #6f0000;
 
 // Dark Theme Colors
@@ -46,7 +46,7 @@ a,
 a:active,
 a:visited {
 	text-decoration: none;
-	color: @dark-text-color;
+	color: @dark-color;
 }
 
 a:hover {
@@ -114,7 +114,7 @@ footer {
 			justify-content: space-between;
 			align-items: center;
 			font-size: 1.2rem;
-			border-bottom: solid 1px @line;
+			border-bottom: solid 1px @line-color;
 			padding: 2px 10px;
 
 			img {
@@ -129,7 +129,7 @@ footer {
 
 #about-boat {
 	background-color: @dark-main-bg-color;
-	color: @light-text-color;
+	color: @light-color;
 
 	.text-container {
 		display: flex;
@@ -206,6 +206,18 @@ footer {
 		img {
 			height: 1.5em;
 		}
+	}
+}
+
+/* __ */
+
+/* Table Styles */
+
+#table-section {
+	margin-bottom: 15px;
+
+	table {
+		display: none;
 	}
 }
 

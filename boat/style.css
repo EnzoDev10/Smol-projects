@@ -156,3 +156,11 @@ footer {
   height: 1.5em;
 }
 /* __ */
+/* Table Styles */
+#table-section {
+  margin-bottom: 15px;
+}
+#table-section table {
+  display: none;
+}
+/* __ */
