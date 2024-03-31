@@ -16,7 +16,8 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-button {
+button,
+input {
   all: unset;
 }
 a,
@@ -161,6 +162,40 @@ footer {
   margin-bottom: 15px;
 }
 #table-section table {
+  display: none;
+}
+/* __ */
+/* Footer Styles */
+#footer {
+  padding: 25px 0;
+}
+#footer .newsletter-container {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .newsletter-container * {
+  margin-bottom: 12px;
+}
+#footer .newsletter-container .footer-logo {
+  height: 4em;
+}
+#footer .newsletter-container .email-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#footer .newsletter-container .email-container input {
+  background-color: #908c8c;
+  color: #232323;
+  padding: 10px 40px 10px 5px;
+  border-radius: 5px;
+}
+#footer .newsletter-container .email-container input::placeholder {
+  color: #232323;
+}
+#footer .footer-links {
   display: none;
 }
 /* __ */
