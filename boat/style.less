@@ -4,18 +4,16 @@
 @gray-color: #232323;
 @light-color: #ffffff;
 @dark-color: #000000;
-@input-color: #908c8c;
+@input-color: #bbb;
 
 // Light Theme Colors
 @light-main-bg-color: #ffffff;
 @light-secondary-bg-color: #d9d9d9;
 @line-color: #b3b3b3;
-@light-table-bg-color: #6f0000;
 
 // Dark Theme Colors
 @dark-main-bg-color: #202020;
 @dark-secondary-bg-color: #1a1a1a;
-@dark-table-bg-color: #131313;
 
 /* General Styles */
 
@@ -124,6 +122,21 @@ footer {
 			}
 		}
 	}
+
+	.toggle {
+		background-image: url(icons/light/toggler-light.svg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+
+		&:checked {
+			background-image:url(icons/dark/toggler-dark.svg);
+			background-size: cover;
+		}
+	}
+
 }
 /* __ */
 
@@ -213,17 +226,6 @@ footer {
 
 /* __ */
 
-/* Table Styles */
-
-#table-section {
-	margin-bottom: 15px;
-
-	table {
-		display: none;
-	}
-}
-
-/* __ */
 
 /* Footer Styles */
 #footer {

@@ -87,6 +87,18 @@ footer {
 .navbar #nav-menu.active .nav-item img {
   height: 1em;
 }
+.navbar .toggle {
+  background-image: url(icons/light/toggler-light.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.navbar .toggle:checked {
+  background-image: url(icons/dark/toggler-dark.svg);
+  background-size: cover;
+}
 /* __ */
 /* About Styles */
 #about-boat {
@@ -157,14 +169,6 @@ footer {
   height: 1.5em;
 }
 /* __ */
-/* Table Styles */
-#table-section {
-  margin-bottom: 15px;
-}
-#table-section table {
-  display: none;
-}
-/* __ */
 /* Footer Styles */
 #footer {
   padding: 25px 0;
@@ -187,7 +191,7 @@ footer {
   gap: 10px;
 }
 #footer .newsletter-container .email-container input {
-  background-color: #908c8c;
+  background-color: #bbb;
   color: #232323;
   padding: 10px 40px 10px 5px;
   border-radius: 5px;
