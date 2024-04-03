@@ -15,6 +15,8 @@ const controlImg = document.getElementById("control-img");
 const siriImg = document.getElementById("siri-img");
 const logos = document.getElementsByClassName("logo");
 const nextIcons = document.getElementsByClassName("next-icon");
+const triangleIcons = document.getElementsByClassName("triangle-icon");
+
 
 // Check if dark mode is enabled
 // If it's enabled, turn it off
@@ -36,6 +38,10 @@ const enableDarkMode = () => {
 		icon.src = "icons/dark/next-dark.svg";
 	});
 
+	Array.from(triangleIcons).forEach((icon) => {
+		icon.src = "icons/dark/triangle-dark.svg";
+	});
+
 	// 2. update darkmode in the localStorage
 	localStorage.setItem("darkMode", "enabled");
 };
@@ -48,13 +54,17 @@ const disableDarkMode = () => {
 	controlImg.src = "images/light/controls-light.png";
 	siriImg.src = "images/light/siri-light.png";
 
-
 	Array.from(logos).forEach((logo) => {
 		logo.src = "icons/light/logo-light.svg";
 	});
 
 	Array.from(nextIcons).forEach((icon) => {
 		icon.src = "icons/light/next-light.svg";
+	});
+
+	
+	Array.from(triangleIcons).forEach((icon) => {
+		icon.src = "icons/light/triangle-light.svg";
 	});
 
 	// 2. update darkmode in the localStorage
