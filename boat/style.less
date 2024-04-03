@@ -79,10 +79,6 @@ footer {
 	position: relative;
 }
 
-.red-text {
-	color: @logo-color;
-}
-
 /* Navbar Styles */
 
 .navbar {
@@ -163,7 +159,6 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
-	padding-top: 50px;
 
 	.text-container {
 		display: flex;
@@ -172,6 +167,10 @@ footer {
 		align-items: center;
 		text-align: center;
 		padding: 35px 0;
+
+		h1 {
+			color: @logo-color;
+		}
 
 		p {
 			font-size: 0.9rem;
@@ -186,7 +185,7 @@ footer {
 				display: flex;
 				align-items: center;
 				gap: 10px;
-				font-size: 2rem;
+				font-size: 3rem;
 				text-align: left;
 
 				img {

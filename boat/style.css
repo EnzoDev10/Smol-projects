@@ -58,9 +58,6 @@ footer {
   background-color: var(--secondary-bg-color);
   position: relative;
 }
-.red-text {
-  color: #ed1c24;
-}
 /* Navbar Styles */
 .navbar {
   display: flex;
@@ -128,7 +125,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding-top: 50px;
 }
 #about-boat .text-container {
   display: flex;
@@ -137,6 +133,9 @@ footer {
   align-items: center;
   text-align: center;
   padding: 35px 0;
+}
+#about-boat .text-container h1 {
+  color: #ed1c24;
 }
 #about-boat .text-container p {
   font-size: 0.9rem;
@@ -151,7 +150,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
 }
 #about-boat .text-container .icons-container .icon img {
