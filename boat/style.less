@@ -160,11 +160,15 @@ footer {
 /* About Styles */
 
 #about-boat {
-	background-image: url(images/general/about-bg.svg);
+	background-image: url(images/general/about-bg-mob.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
+
+	.boat-img {
+		display: none;
+	}
 
 	.text-container {
 		display: flex;
@@ -297,13 +301,15 @@ footer {
 
 /* __ */
 
-
 /* Desktop Media Queries */
 
 @media screen and (min-width: 1024px) {
-	
-	.navbar {
+	.break-line {
+		display: block;
+	}
 
+	/* Navbar desk styles */
+	.navbar {
 		#menu-toggler {
 			display: none;
 		}
@@ -330,6 +336,54 @@ footer {
 			}
 		}
 	}
+	/* __ */
+	/* About desk styles */
+	#about-boat {
+		background-image: url(images/general/about-bg-desk.svg);
+		padding: 40px 0;
+		text-align: left;
+
+		.flex-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 50px;
+
+			.boat-img {
+				height: 300px;
+				display: flex;
+				margin-left: 25px;
+			}
+
+			.text-container {
+				align-items: flex-start;
+				text-align: left;
+
+				.hero-logo {
+					align-self: center;
+					height: 70px;
+				}
+
+				h1 {
+					font-size: 2rem;
+
+					.white-text {
+						color: #fff;
+					}
+				}
+
+				.icon {
+					img {
+						height: 1.1em;
+					}
+					p {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+	/* __ */
 }
 
 /*  */

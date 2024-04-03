@@ -126,11 +126,14 @@ footer {
 /* __ */
 /* About Styles */
 #about-boat {
-  background-image: url(images/general/about-bg.svg);
+  background-image: url(images/general/about-bg-mob.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+}
+#about-boat .boat-img {
+  display: none;
 }
 #about-boat .text-container {
   display: flex;
@@ -238,6 +241,10 @@ footer {
 /* __ */
 /* Desktop Media Queries */
 @media screen and (min-width: 1024px) {
+  .break-line {
+    display: block;
+  }
+  /* Navbar desk styles */
   .navbar #menu-toggler {
     display: none;
   }
@@ -259,5 +266,44 @@ footer {
   .navbar #nav-menu .triangle-icon {
     height: 0.8em;
   }
+  /* __ */
+  /* About desk styles */
+  #about-boat {
+    background-image: url(images/general/about-bg-desk.svg);
+    padding: 40px 0;
+    text-align: left;
+  }
+  #about-boat .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  #about-boat .flex-container .boat-img {
+    height: 300px;
+    display: flex;
+    margin-left: 25px;
+  }
+  #about-boat .flex-container .text-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+  #about-boat .flex-container .text-container .hero-logo {
+    align-self: center;
+    height: 70px;
+  }
+  #about-boat .flex-container .text-container h1 {
+    font-size: 2rem;
+  }
+  #about-boat .flex-container .text-container h1 .white-text {
+    color: #fff;
+  }
+  #about-boat .flex-container .text-container .icon img {
+    height: 1.1em;
+  }
+  #about-boat .flex-container .text-container .icon p {
+    font-size: 1.3rem;
+  }
+  /* __ */
 }
 /*  */
