@@ -48,6 +48,7 @@ const disableDarkMode = () => {
 	controlImg.src = "images/light/controls-light.png";
 	siriImg.src = "images/light/siri-light.png";
 
+
 	Array.from(logos).forEach((logo) => {
 		logo.src = "icons/light/logo-light.svg";
 	});

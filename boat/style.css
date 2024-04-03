@@ -79,6 +79,9 @@ footer {
 }
 .navbar #menu-toggler.dark {
   background-image: url(icons/dark/menu-dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .navbar #nav-menu {
   display: none;
