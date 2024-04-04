@@ -29,7 +29,7 @@ const enableDarkMode = () => {
 	darkModeToggle.classList.add("dark");
 	menuToggle.classList.add("dark");
 	controlImg.src = "images/dark/controls-dark.png";
-	siriImg.src = "images/dark/table-bg-dark.svg";
+	siriImg.src = "images/dark/siri-dark.png";
 	tableBg.style.backgroundImage = "url('images/dark/table-bg-dark.svg')";
 
 	Array.from(logos).forEach((logo) => {
@@ -56,7 +56,6 @@ const disableDarkMode = () => {
 	controlImg.src = "images/light/controls-light.png";
 	siriImg.src = "images/light/siri-light.png";
 	tableBg.style.backgroundImage = "url('images/light/table-bg-light.svg')";
-
 
 	Array.from(logos).forEach((logo) => {
 		logo.src = "icons/light/logo-light.svg";
