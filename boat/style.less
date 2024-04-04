@@ -148,6 +148,7 @@ footer {
 		background-size: cover;
 		width: 30px;
 		height: 30px;
+		cursor: pointer;
 	}
 
 	#theme-toggle.dark {
@@ -215,7 +216,7 @@ footer {
 /* presentation Styles */
 
 #product {
-	padding: 30px 0;
+	padding: 40px 0 20px 0;
 	text-align: center;
 
 	h2 {
@@ -383,6 +384,67 @@ footer {
 			}
 		}
 	}
+	/* __ */
+
+	/* presentation desk Styles */
+	#product {
+		padding-top: 70px;
+
+		h2 {
+			font-size: 2rem;
+		}
+	}
+	/* __ */
+
+	/* Characteristics desk styles */
+	.info-section {
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		img,
+		.info-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+
+			img,
+			.info-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.battery-container,
+		.cushion-container,
+		.controls-container {
+			.info-text {
+				text-align: left;
+				order: -1;
+			}
+		}
+
+		.design-container {
+			grid-template-columns: 1fr 1.5fr;
+		}
+
+		.controls-container {
+			.image-container {
+				img {
+					height: 2.5em;
+				}
+			}
+		}
+	}
+
 	/* __ */
 }
 
