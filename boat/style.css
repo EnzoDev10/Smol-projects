@@ -202,6 +202,11 @@ footer {
 .info-section .image-container img {
   height: 1.5em;
 }
+/* Table styles */
+.table-section {
+  display: none;
+}
+/* __ */
 /* __ */
 /* Footer Styles */
 #footer {
@@ -345,9 +350,42 @@ footer {
   .info-section .design-container {
     grid-template-columns: 1fr 1.5fr;
   }
+  .info-section .controls-container #controls-img {
+    display: none;
+  }
   .info-section .controls-container .image-container img {
     height: 2.5em;
   }
   /* __ */
 }
-/*  */
+@media screen and (min-width: 1440px) {
+  /* Table Styles */
+  .table-section {
+    display: initial;
+    font-size: 0.9rem;
+  }
+  .table-section #table-bg {
+    background-image: url(images/light/table-bg-light.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .table-section #table-bg table {
+    background-color: #000;
+    width: 50%;
+    padding: 10px;
+  }
+  .table-section #table-bg table tbody td {
+    padding-bottom: 10px;
+  }
+  .table-section #table-bg table tbody td:first-child {
+    color: #fff;
+  }
+  .table-section #table-bg table tbody td:nth-child(2) {
+    color: #fff;
+    padding-left: 40px;
+  }
+}

@@ -253,6 +253,14 @@ footer {
 	}
 }
 
+/* Table styles */
+
+.table-section {
+	display: none;
+}
+
+/* __ */
+
 /* __ */
 
 /* Footer Styles */
@@ -437,6 +445,10 @@ footer {
 		}
 
 		.controls-container {
+			#controls-img {
+				display: none;
+			}
+
 			.image-container {
 				img {
 					height: 2.5em;
@@ -444,8 +456,48 @@ footer {
 			}
 		}
 	}
-
 	/* __ */
 }
 
-/*  */
+@media screen and (min-width: 1440px) {
+	/* Table Styles */
+
+	.table-section {
+		display: initial;
+		font-size: 0.9rem;
+
+
+		#table-bg {
+
+			background-image: url(images/light/table-bg-light.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 30px;
+			padding: 20px;
+
+			display: flex;
+			align-items: center;
+
+			table {
+				background-color: #000;
+				width: 50%;
+				padding: 10px;
+
+				tbody {
+					td {
+						padding-bottom: 10px;
+					}
+
+					td:first-child {
+						color: #fff;
+					}
+
+					td:nth-child(2) {
+						color: #fff;
+						padding-left: 40px;
+					}
+				}
+			}
+		}
+	}
+}

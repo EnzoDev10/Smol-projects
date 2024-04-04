@@ -13,10 +13,11 @@ let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#theme-toggle");
 const controlImg = document.getElementById("control-img");
 const siriImg = document.getElementById("siri-img");
+const tableBg = document.getElementById("table-bg");
+
 const logos = document.getElementsByClassName("logo");
 const nextIcons = document.getElementsByClassName("next-icon");
 const triangleIcons = document.getElementsByClassName("triangle-icon");
-
 
 // Check if dark mode is enabled
 // If it's enabled, turn it off
@@ -28,7 +29,8 @@ const enableDarkMode = () => {
 	darkModeToggle.classList.add("dark");
 	menuToggle.classList.add("dark");
 	controlImg.src = "images/dark/controls-dark.png";
-	siriImg.src = "images/dark/siri-dark.png";
+	siriImg.src = "images/dark/table-bg-dark.svg";
+	tableBg.style.backgroundImage = "url('images/dark/table-bg-dark.svg')";
 
 	Array.from(logos).forEach((logo) => {
 		logo.src = "icons/dark/logo-dark.svg";
@@ -53,6 +55,8 @@ const disableDarkMode = () => {
 	menuToggle.classList.remove("dark");
 	controlImg.src = "images/light/controls-light.png";
 	siriImg.src = "images/light/siri-light.png";
+	tableBg.style.backgroundImage = "url('images/light/table-bg-light.svg')";
+
 
 	Array.from(logos).forEach((logo) => {
 		logo.src = "icons/light/logo-light.svg";
@@ -62,7 +66,6 @@ const disableDarkMode = () => {
 		icon.src = "icons/light/next-light.svg";
 	});
 
-	
 	Array.from(triangleIcons).forEach((icon) => {
 		icon.src = "icons/light/triangle-light.svg";
 	});

@@ -1,0 +1,259 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #ed1c24;
+}
+li {
+  list-style: none;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.navbar,
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+section {
+  margin: 50px 0;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+.break-line {
+  display: block;
+}
+/* __ */
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar ul .nav-item {
+  font-size: 1.3rem;
+  transition: transform 200ms;
+}
+.navbar ul .nav-item:hover {
+  transform: translateY(-5px);
+}
+/* __ */
+/* About Styles (Left for the end, as i need an image from Brian) */
+#about-boat {
+  margin: 0;
+  background-image: url(images/Imagen_de_Presentacion_Solo_el_logo.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #202020;
+  color: #fff;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+#about-boat .flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#about-boat .flex-container .text-container {
+  margin-top: 20px;
+  width: 60%;
+}
+#about-boat .flex-container .text-container * {
+  margin-bottom: 10px;
+}
+#about-boat .flex-container .text-container h1 {
+  font-size: 3em;
+}
+#about-boat .flex-container .text-container h1 .red-text {
+  color: #ff0009;
+}
+#about-boat .flex-container .text-container p {
+  color: #dfdfdf;
+  font-size: 1.5em;
+}
+#about-boat .flex-container .icons-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+#about-boat .flex-container .icons-container .icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#about-boat .flex-container .icons-container img {
+  width: 90px;
+  height: 90px;
+}
+#about-boat .flex-container .icons-container .icon-text {
+  color: #ffc41c;
+  font-size: 2.3em;
+}
+/* __ */
+/* Product Styles */
+.product-container {
+  padding: 60px 0;
+  text-align: center;
+}
+.product-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.product-container p {
+  font-size: 1.4rem;
+}
+/* __ */
+/* Info Styles */
+.info-section .container {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
+}
+.info-section .container .info-text {
+  width: 60%;
+}
+.info-section .container .info-text h2 {
+  text-decoration: underline;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.info-section .container .info-text p {
+  font-size: 1.4rem;
+}
+.info-section .battery-container {
+  background-image: url(images/battery-img.webp);
+}
+.info-section .design-container {
+  background-image: url(images/info-red-back.webp);
+  background-position: left;
+  justify-content: flex-end;
+}
+.info-section .design-container .info-text {
+  text-align: right;
+}
+.info-section .cushion-container {
+  background-image: url(images/purple-img.webp);
+}
+.info-section .controls-container {
+  background-image: url(images/Easy-Tap-img.webp);
+  align-items: flex-start;
+}
+.info-section .controls-container .info-text {
+  margin-top: 200px;
+}
+.info-section .battery-container,
+.info-section .cushion-container,
+.info-section .controls-container {
+  background-position: right;
+}
+/* __ */
+/* Table Styles */
+.table-section {
+  background-image: url(images/Cuadro_de_info_Sin_Tabla.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 15px;
+  border-radius: 20px;
+}
+.table-section .container {
+  display: flex;
+  align-items: center;
+  height: 900px;
+}
+.table-section .container table {
+  background-color: #000000;
+  width: 50%;
+  margin-top: 20px;
+  padding: 40px;
+}
+.table-section .container table tbody td {
+  padding-bottom: 10px;
+}
+.table-section .container table tbody td:first-child {
+  color: #dfdfdf;
+}
+.table-section .container table tbody td:nth-child(2) {
+  color: #fff;
+  padding-left: 40px;
+}
+/* __ */
+/* Footer Styles */
+footer {
+  background-color: #dfdfdf;
+}
+footer .container {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .newsletter-container *:not(.email-icon) {
+  margin-bottom: 15px;
+}
+footer .container .newsletter-container .email-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer .container .newsletter-container .email-container input {
+  color: #000000;
+  all: unset;
+  background-color: #bfbfbf;
+  padding: 10px 45px 10px 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+footer .container .newsletter-container .email-container input::placeholder {
+  font-family: "Metropolis", sans-serif;
+  color: #000000;
+}
+footer .container .newsletter-container .email-container img {
+  background-color: #ed1c24;
+  padding: 5px;
+  border-radius: 100%;
+}
+footer .container .newsletter-container h3 {
+  font-size: 2rem;
+}
+footer .container .footer-links {
+  display: flex;
+  gap: 50px;
+  font-size: 1.2rem;
+}
+footer .container .footer-links .flex {
+  display: flex;
+  gap: 20px;
+}
+footer .container .footer-links .footer-heading {
+  font-size: 1.4rem;
+}
+footer .container .footer-links li,
+footer .container .footer-links .footer-heading {
+  margin-bottom: 10px;
+}
+/* __ */
