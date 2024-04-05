@@ -18,7 +18,7 @@ const tableBg = document.getElementById("table-bg");
 const logos = document.getElementsByClassName("logo");
 const nextIcons = document.getElementsByClassName("next-icon");
 const triangleIcons = document.getElementsByClassName("triangle-icon");
-
+const faqIcons = document.getElementsByClassName("faq-icon");
 // Check if dark mode is enabled
 // If it's enabled, turn it off
 // If it's disabled, turn it on
@@ -44,6 +44,11 @@ const enableDarkMode = () => {
 		icon.src = "icons/dark/triangle-dark.svg";
 	});
 
+	Array.from(faqIcons).forEach((icon) => {
+		icon.src = "icons/dark/faq-icon-dark.svg";
+	});
+
+
 	// 2. update darkmode in the localStorage
 	localStorage.setItem("darkMode", "enabled");
 };
@@ -67,6 +72,10 @@ const disableDarkMode = () => {
 
 	Array.from(triangleIcons).forEach((icon) => {
 		icon.src = "icons/light/triangle-light.svg";
+	});
+
+	Array.from(faqIcons).forEach((icon) => {
+		icon.src = "icons/light/faq-icon-light.svg";
 	});
 
 	// 2. update darkmode in the localStorage
