@@ -241,11 +241,7 @@ footer {
 #faq-section .container .answer {
   position: relative;
   padding-bottom: 20px;
-}
-#faq-section .container .answer.active {
-  animation-name: answerAnimation;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  padding-left: 10px;
 }
 #faq-section li {
   list-style: initial;
