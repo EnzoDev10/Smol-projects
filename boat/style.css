@@ -253,38 +253,57 @@ footer {
 /* __ */
 /* Footer Styles */
 #footer {
-  padding: 25px 0;
+  padding: 30px 0;
 }
-#footer .newsletter-container {
-  font-size: 1rem;
+#footer .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#footer .container .newsletter-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
 }
-#footer .newsletter-container * {
-  margin-bottom: 12px;
+#footer .container .newsletter-container .footer-logo {
+  height: 2.2em;
+  width: fit-content;
 }
-#footer .newsletter-container .footer-logo {
-  height: 4em;
+#footer .container .newsletter-container input {
+  background-color: #bbb;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+  color: #000;
 }
-#footer .newsletter-container .email-container {
+#footer .container .newsletter-container input::placeholder {
+  color: #000;
+}
+#footer .container .newsletter-container button {
+  background-color: #ff161f;
+  padding: 5px;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-#footer .newsletter-container .email-container input {
-  background-color: #bbb;
-  color: #000;
-  padding: 10px 40px 10px 5px;
-  border-radius: 5px;
-}
-#footer .newsletter-container .email-container input::placeholder {
-  color: #000;
-}
-#footer .newsletter-container .email-container .email-icon {
+  justify-content: space-around;
   cursor: pointer;
 }
-#footer .footer-links {
+#footer .container .newsletter-container button img {
+  height: 1.1em;
+}
+#footer .container .links-container {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .container .links-container label {
+  background-color: #bbb;
+  padding: 3px;
+}
+#footer .container .shop-container,
+#footer .container .company-container,
+#footer .container .help-container {
   display: none;
 }
 /* __ */

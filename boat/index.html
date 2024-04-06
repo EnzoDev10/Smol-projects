@@ -542,23 +542,44 @@
 					<img
 						src="icons/light/logo-light.svg"
 						alt="logo"
-						width="225"
-						height="100"
 						aria-hidden="true"
 						class="footer-logo logo"
 					/>
-					<div class="email-container met-med">
-						<input type="email" placeholder="Enter your email address..." />
-						<img
-							src="icons/general/Email-icon.svg"
-							class="email-icon"
-							alt="email-icon"
-							aria-hidden="true"
-						/>
-					</div>
-					<h3 class="met-med">Subscribe to our email newsletter!</h3>
+					<h4 class="met-med">Subscribe to our email newsletter!</h4>
+					<input
+						type="email"
+						class="met-light"
+						placeholder="Enter your email address..."
+					/>
+					<button type="submit" class="met-light">Send <img src="icons/general/email-icon.svg" alt="An email icon for the button to send your email" aria-hidden="true"></button>
 				</div>
-				<div class="footer-links">
+				<div class="footer-links met-light">
+					<div class="links-container met-med">
+						<input
+							name="links"
+							type="radio"
+							id="shop-links"
+							class="link-radio"
+						/>
+						<label for="shop-links" class="link-radio-label">Shop</label>
+
+						<input
+							name="links"
+							type="radio"
+							id="company-links"
+							class="link-radio"
+							checked
+						/>
+						<label for="company-links" class="link-radio-label">Company</label>
+
+						<input
+							name="links"
+							type="radio"
+							id="help-links"
+							class="link-radio"
+						/>
+						<label for="help-links" class="link-radio-label">Help</label>
+					</div>
 					<div class="shop-container">
 						<h3 class="met-med footer-heading">Shop</h3>
 						<div class="flex">
