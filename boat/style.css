@@ -272,7 +272,7 @@ footer {
 #footer .container .newsletter-container input {
   background-color: #bbb;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 5px;
   font-size: 13px;
   color: #000;
 }
@@ -295,11 +295,52 @@ footer {
 }
 #footer .container .links-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#footer .container .links-container input {
+  display: none;
+}
+#footer .container .links-container input:checked + label {
+  background-color: #444;
+}
+#footer .container .links-container input:checked + label:before {
+  opacity: 1;
 }
 #footer .container .links-container label {
-  background-color: #bbb;
-  padding: 3px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #777;
+  transition: all 0.2s ease-out;
+}
+#footer .container .links-container .shop-label {
+  border-radius: 5px 0 0 5px;
+  position: relative;
+}
+#footer .container .links-container .shop-label::before,
+#footer .container .links-container .shop-label::after {
+  position: absolute;
+  content: "";
+  height: 35px;
+}
+#footer .container .links-container .shop-label::before {
+  right: 0;
+  top: 15%;
+  border-right: 1px solid #fff;
+}
+#footer .container .links-container .help-label {
+  border-radius: 0 5px 5px 0;
+  position: relative;
+}
+#footer .container .links-container .help-label::before {
+  position: absolute;
+  content: "";
+  height: 35px;
+}
+#footer .container .links-container .help-label::before {
+  left: 0;
+  top: 15%;
+  border-left: 1px solid #fff;
 }
 #footer .container .shop-container,
 #footer .container .company-container,
