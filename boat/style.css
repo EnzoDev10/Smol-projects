@@ -269,7 +269,7 @@ footer {
   align-items: center;
 }
 #footer .container .newsletter-container .footer-logo {
-  height: 2.2em;
+  height: 4em;
   width: fit-content;
 }
 #footer .container .newsletter-container input {
@@ -284,6 +284,7 @@ footer {
   color: #000;
 }
 #footer .container .newsletter-container button {
+  color: #fff;
   background-color: #ff161f;
   padding: 5px;
   width: 100px;
@@ -312,6 +313,7 @@ footer {
   opacity: 1;
 }
 #footer .container .links-container label {
+  color: #fff;
   width: 100%;
   padding: 15px 0;
   background-color: #777;
