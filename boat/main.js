@@ -1,3 +1,4 @@
+/* Menu */
 const menuToggle = document.getElementById("menu-toggler");
 
 menuToggle.addEventListener("click", function () {
@@ -9,6 +10,23 @@ menuToggle.addEventListener("click", function () {
 	}
 });
 
+/* Change between footer links */
+const radioBtns = document.getElementsByClassName("link-radio");
+const shopList = document.getElementById("shop-list");
+const companyList = document.getElementById("company-list");
+const helpList = document.getElementById("help-list");
+
+function showStuff(id, btn) {
+	shopList.style.display = "none";
+	companyList.style.display = "none";
+	helpList.style.display = "none";
+
+	if (document.getElementById(id).style.display == "none") {
+		document.getElementById(id).style.display = "grid";
+	}
+}
+
+/* Theme toggler */
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#theme-toggle");
 const controlImg = document.getElementById("control-img");
@@ -47,7 +65,6 @@ const enableDarkMode = () => {
 	Array.from(faqIcons).forEach((icon) => {
 		icon.src = "icons/dark/faq-icon-dark.svg";
 	});
-
 
 	// 2. update darkmode in the localStorage
 	localStorage.setItem("darkMode", "enabled");

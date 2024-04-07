@@ -551,8 +551,16 @@
 						class="met-light"
 						placeholder="Enter your email address..."
 					/>
-					<button type="submit" class="met-light">Send <img src="icons/general/email-icon.svg" alt="An email icon for the button to send your email" aria-hidden="true"></button>
+					<button type="submit" class="met-light">
+						Send
+						<img
+							src="icons/general/email-icon.svg"
+							alt="An email icon for the button to send your email"
+							aria-hidden="true"
+						/>
+					</button>
 				</div>
+
 				<div class="footer-links met-light">
 					<div class="links-container met-med">
 						<input
@@ -560,67 +568,69 @@
 							type="radio"
 							id="shop-links"
 							class="link-radio"
+							onchange="showStuff('shop-list',this)"
 						/>
-						<label for="shop-links" class="link-radio-label shop-label">Shop</label>
-
+						<label for="shop-links" class="link-radio-label shop-label"
+						>Shop</label
+						>
+						
 						<input
-							name="links"
-							type="radio"
-							id="company-links"
-							class="link-radio"
-							checked
+						name="links"
+						type="radio"
+						id="company-links"
+						class="link-radio"
+						onchange="showStuff('company-list',this)"
 						/>
 						<label for="company-links" class="link-radio-label">Company</label>
-
+						
 						<input
-							name="links"
+						name="links"
 							type="radio"
 							id="help-links"
 							class="link-radio"
+							checked	
+							onchange="showStuff('help-list',this)"
 						/>
-						<label for="help-links" class="link-radio-label help-label">Help</label>
+						<label for="help-links" class="link-radio-label help-label"
+							>Help</label
+						>
 					</div>
 					<div class="shop-container">
-						<h3 class="met-med footer-heading">Shop</h3>
-						<div class="flex">
-							<ul>
-								<li class="met-extra"><a href="#">True Wireless Earbuds</a></li>
-								<li class="met-extra"><a href="#">Wired Headphones </a></li>
-								<li class="met-extra"><a href="#">Home Audio </a></li>
-								<li class="met-extra"><a href="#">Smart Watches </a></li>
-								<li class="met-extra"><a href="#">Misfit Trimers </a></li>
-								<li class="met-extra"><a href="#">Refer & Earnv </a></li>
-							</ul>
-							<ul>
-								<li class="met-extra"><a href="#">Wireless Headphones </a></li>
-								<li class="met-extra"><a href="#">Wireless Speakers </a></li>
-								<li class="met-extra"><a href="#">Mobile Accesories </a></li>
-								<li class="met-extra"><a href="#">Trendel </a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="help-container">
-						<ul>
-							<li class="met-med footer-heading">Help</li>
-							<li class="met-extra"><a href="">Track Your Order</a></li>
-							<li class="met-extra"><a href="">Warranty & Support</a></li>
-							<li class="met-extra"><a href="">Return Policy</a></li>
-							<li class="met-extra"><a href="">Service Centers</a></li>
-							<li class="met-extra"><a href="">Bulk Orders</a></li>
-							<li class="met-extra"><a href="">FAQs</a></li>
-							<li class="met-extra"><a href="">Why Buy Direct</a></li>
+						<ul class="footer-list" id="shop-list">
+							<li class="met-light"><a href="#">-True Wireless Earbuds</a></li>
+							<li class="met-light"><a href="#">-Wired Headphones </a></li>
+							<li class="met-light"><a href="#">-Home Audio </a></li>
+							<li class="met-light"><a href="#">-Smart Watches </a></li>
+							<li class="met-light"><a href="#">-Misfit Trimers </a></li>
+							<li class="met-light"><a href="#">-Refer & Earnv </a></li>
+							<li class="met-light"><a href="#">-Wireless Headphones </a></li>
+							<li class="met-light"><a href="#">-Wireless Speakers </a></li>
+							<li class="met-light"><a href="#">-Mobile Accesories </a></li>
+							<li class="met-light"><a href="#">-Trendel </a></li>
 						</ul>
 					</div>
 					<div class="company-container">
-						<li class="met-med footer-heading">Company</li>
-						<li class="met-extra"><a href="">About boAt</a></li>
-						<li class="met-extra"><a href="">News</a></li>
-						<li class="met-extra"><a href="">Read Our Blog</a></li>
-						<li class="met-extra"><a href="">Careers</a></li>
-						<li class="met-extra"><a href="">Security</a></li>
-						<li class="met-extra"><a href="">Investor Relations</a></li>
-						<li class="met-extra"><a href="">Social Responsibility</a></li>
-						<li class="met-extra"><a href="">Warranty</a></li>
+						<ul class="footer-list" id="company-list">
+							<li class="met-light"><a href="">-About boAt</a></li>
+							<li class="met-light"><a href="">-News</a></li>
+							<li class="met-light"><a href="">-Read Our Blog</a></li>
+							<li class="met-light"><a href="">-Careers</a></li>
+							<li class="met-light"><a href="">-Security</a></li>
+							<li class="met-light"><a href="">-Investor Relations</a></li>
+							<li class="met-light"><a href="">-Social Responsibility</a></li>
+							<li class="met-light"><a href="">-Warranty</a></li>
+						</ul>
+					</div>
+					<div class="help-container">
+						<ul class="footer-list" id="help-list">
+							<li class="met-light"><a href="">-Track Your Order</a></li>
+							<li class="met-light"><a href="">-Warranty & Support</a></li>
+							<li class="met-light"><a href="">-Return Policy</a></li>
+							<li class="met-light"><a href="">-Service Centers</a></li>
+							<li class="met-light"><a href="">-Bulk Orders</a></li>
+							<li class="met-light"><a href="">-FAQs</a></li>
+							<li class="met-light"><a href="">-Why Buy Direct</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
