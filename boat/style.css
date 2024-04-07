@@ -256,8 +256,8 @@ footer {
   padding: 30px 0;
 }
 #footer .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 #footer .container .newsletter-container {
@@ -318,6 +318,9 @@ footer {
   padding: 15px 0;
   background-color: #777;
   transition: all 0.2s ease-out;
+}
+#footer .container .links-container label:hover {
+  background-color: #555;
 }
 #footer .container .links-container .shop-label {
   border-radius: 5px 0 0 5px;
@@ -469,6 +472,15 @@ footer {
   }
   .info-section .controls-container .image-container img {
     height: 2.5em;
+  }
+  #footer .container {
+    grid-template-columns: 1fr 2fr;
+  }
+  #footer .container .newsletter-container {
+    align-items: flex-start;
+  }
+  #footer .container .links-container label {
+    max-width: 250px;
   }
   /* __ */
 }

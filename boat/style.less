@@ -5,7 +5,8 @@
 @input-color: #232323;
 @input-color: #bbb;
 @radio-color: #777;
-@input-accent: #444;
+@radio-active: #444;
+@radio-hover: #555;
 // Light Theme Colors
 
 .lightmode {
@@ -80,7 +81,6 @@ footer {
 	background-color: var(--secondary-bg-color);
 	position: relative;
 }
-
 
 /* Navbar Styles */
 
@@ -324,10 +324,9 @@ footer {
 	padding: 30px 0;
 
 	.container {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
 		gap: 40px;
-		
 
 		.newsletter-container {
 			display: flex;
@@ -382,7 +381,8 @@ footer {
 				display: none;
 
 				&:checked + label {
-					background-color: @input-accent;
+					background-color: @radio-active;
+
 					&:before {
 						opacity: 1;
 					}
@@ -395,6 +395,10 @@ footer {
 				padding: 15px 0;
 				background-color: @radio-color;
 				transition: all 0.2s ease-out;
+
+				&:hover {
+					background-color: @radio-hover;
+				}
 			}
 
 			.shop-label {
@@ -432,22 +436,19 @@ footer {
 					border-left: 1px solid #fff;
 				}
 			}
-	
 		}
 		#shop-list,
 		#help-list {
 			display: none;
 		}
-		}
+	}
 
-		.footer-list {
-			margin-top: 20px;
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 15px;
-
-		}
-
+	.footer-list {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
 }
 /* __ */
 
@@ -593,6 +594,22 @@ footer {
 			.image-container {
 				img {
 					height: 2.5em;
+				}
+			}
+		}
+	}
+
+	#footer {
+		.container {
+			grid-template-columns: 1fr 2fr;
+
+			.newsletter-container {
+				align-items: flex-start;
+			}
+
+			.links-container {
+				label {
+					max-width: 250px;
 				}
 			}
 		}
