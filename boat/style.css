@@ -371,6 +371,7 @@ footer {
   }
   .navbar .logo {
     height: 50px;
+    width: initial;
   }
   .navbar #nav-menu {
     margin-top: 5px;
