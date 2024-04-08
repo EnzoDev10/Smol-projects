@@ -333,9 +333,6 @@ footer {
 #footer .container .links-container label:hover {
   background-color: #555;
 }
-#footer .container .links-container label:focus {
-  outline: 5px auto var(--main-text-color);
-}
 #footer .container .links-container .shop-label {
   border-radius: 5px 0 0 5px;
   position: relative;
@@ -364,6 +361,9 @@ footer {
   left: 0;
   top: 15%;
   border-left: 1px solid #fff;
+}
+#footer .container .links-container .help-label:focus {
+  background-color: #444;
 }
 #footer .container #shop-list,
 #footer .container #help-list {
