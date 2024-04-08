@@ -9,7 +9,7 @@ menuToggle.addEventListener("click", function () {
 
 	} else {
 		menu.classList.add("active");
-		menuToggle.style.backgroundImage = "url('icons/light/close-light.svg')"
+		menuToggle.style.backgroundImage = "url('icons/light/close-light1.svg')"
 	}
 });
 
