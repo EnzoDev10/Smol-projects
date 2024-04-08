@@ -82,6 +82,10 @@ footer {
 	position: relative;
 }
 
+.white-icon {
+	filter: invert(83%) sepia(99%) saturate(0%) hue-rotate(87deg) brightness(102%) contrast(101%);
+}
+
 /* Navbar Styles */
 
 .navbar {
@@ -91,7 +95,8 @@ footer {
 	padding: 15px 0;
 
 	.logo {
-		height: 30px;
+		height: 40px;
+		width: 100px;
 	}
 
 	#menu-toggler {
@@ -104,12 +109,6 @@ footer {
 		z-index: 2;
 	}
 
-	#menu-toggler.dark {
-		background-image: url(icons/dark/menu-dark.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-	}
 
 	#nav-menu {
 		display: none;
@@ -587,13 +586,16 @@ footer {
 		}
 
 		.controls-container {
-			#controls-img {
-				display: none;
-			}
-
 			.image-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				img {
 					height: 2.5em;
+				}
+
+				#siri-img {
+					height:1.8em;
 				}
 			}
 		}

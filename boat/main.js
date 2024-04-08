@@ -5,8 +5,11 @@ menuToggle.addEventListener("click", function () {
 	let menu = document.getElementById("nav-menu");
 	if (menu.classList.contains("active")) {
 		menu.classList.remove("active");
+		menuToggle.style.backgroundImage = "url('icons/light/menu-light.svg')"
+
 	} else {
 		menu.classList.add("active");
+		menuToggle.style.backgroundImage = "url('icons/light/close-light.svg')"
 	}
 });
 
@@ -45,25 +48,27 @@ const enableDarkMode = () => {
 	// 1. Add the class darkmode to the body
 	document.body.classList.add("darkmode");
 	darkModeToggle.classList.add("dark");
-	menuToggle.classList.add("dark");
+	menuToggle.classList.add("white-icon");
 	controlImg.src = "images/dark/controls-dark.png";
-	siriImg.src = "images/dark/siri-dark.png";
+	siriImg.src = "images/dark/Siri-dark.svg";
 	tableBg.style.backgroundImage = "url('images/dark/table-bg-dark.svg')";
 
 	Array.from(logos).forEach((logo) => {
-		logo.src = "icons/dark/logo-dark.svg";
+		logo.src = "icons/dark/logo-dark.png";
 	});
 
 	Array.from(nextIcons).forEach((icon) => {
-		icon.src = "icons/dark/next-dark.svg";
+		icon.classList.add("white-icon");
 	});
 
 	Array.from(triangleIcons).forEach((icon) => {
-		icon.src = "icons/dark/triangle-dark.svg";
+		icon.classList.add("white-icon");
+
 	});
 
 	Array.from(faqIcons).forEach((icon) => {
-		icon.src = "icons/dark/faq-icon-dark.svg";
+		icon.classList.add("white-icon");
+
 	});
 
 	// 2. update darkmode in the localStorage
@@ -74,25 +79,28 @@ const disableDarkMode = () => {
 	// 1. Add the class darkmode to the body
 	document.body.classList.remove("darkmode");
 	darkModeToggle.classList.remove("dark");
-	menuToggle.classList.remove("dark");
+	menuToggle.classList.remove("white-icon");
 	controlImg.src = "images/light/controls-light.png";
-	siriImg.src = "images/light/siri-light.png";
+	siriImg.src = "images/light/Siri-light.svg";
 	tableBg.style.backgroundImage = "url('images/light/table-bg-light.svg')";
 
 	Array.from(logos).forEach((logo) => {
-		logo.src = "icons/light/logo-light.svg";
+		logo.src = "icons/light/logo-light.png";
 	});
 
 	Array.from(nextIcons).forEach((icon) => {
-		icon.src = "icons/light/next-light.svg";
+		icon.classList.remove("white-icon");
+
 	});
 
 	Array.from(triangleIcons).forEach((icon) => {
-		icon.src = "icons/light/triangle-light.svg";
+		icon.classList.remove("white-icon");
+
 	});
 
 	Array.from(faqIcons).forEach((icon) => {
-		icon.src = "icons/light/faq-icon-light.svg";
+		icon.classList.remove("white-icon");
+
 	});
 
 	// 2. update darkmode in the localStorage
