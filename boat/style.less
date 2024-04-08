@@ -83,7 +83,8 @@ footer {
 }
 
 .white-icon {
-	filter: invert(83%) sepia(99%) saturate(0%) hue-rotate(87deg) brightness(102%) contrast(101%);
+	filter: invert(83%) sepia(99%) saturate(0%) hue-rotate(87deg) brightness(102%)
+		contrast(101%);
 }
 
 /* Navbar Styles */
@@ -108,7 +109,6 @@ footer {
 		background-size: contain;
 		z-index: 2;
 	}
-
 
 	#nav-menu {
 		display: none;
@@ -351,6 +351,10 @@ footer {
 				&::placeholder {
 					color: #000;
 				}
+
+				&:focus {
+					outline: 5px auto #000;
+				}
 			}
 
 			button {
@@ -364,6 +368,19 @@ footer {
 				align-items: center;
 				justify-content: space-around;
 				cursor: pointer;
+				transition: 0.25s;
+
+				&:hover {
+					transform: translateY(-0.15em);
+				}
+
+				&:active {
+					transform: translateY(0.25em);
+				}
+
+				&:focus {
+					outline: 5px auto #fff;
+				}
 
 				img {
 					height: 1.1em;
@@ -397,6 +414,10 @@ footer {
 
 				&:hover {
 					background-color: @radio-hover;
+				}
+
+				&:focus {
+					outline: 5px auto var(--main-text-color);
 				}
 			}
 
@@ -596,7 +617,7 @@ footer {
 				}
 
 				#siri-img {
-					height:1.8em;
+					height: 1.8em;
 				}
 			}
 		}

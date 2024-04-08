@@ -281,6 +281,9 @@ footer {
 #footer .container .newsletter-container input::placeholder {
   color: #000;
 }
+#footer .container .newsletter-container input:focus {
+  outline: 5px auto #000;
+}
 #footer .container .newsletter-container button {
   color: #fff;
   background-color: #ff161f;
@@ -292,6 +295,16 @@ footer {
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+  transition: 0.25s;
+}
+#footer .container .newsletter-container button:hover {
+  transform: translateY(-0.15em);
+}
+#footer .container .newsletter-container button:active {
+  transform: translateY(0.25em);
+}
+#footer .container .newsletter-container button:focus {
+  outline: 5px auto #fff;
 }
 #footer .container .newsletter-container button img {
   height: 1.1em;
@@ -319,6 +332,9 @@ footer {
 }
 #footer .container .links-container label:hover {
   background-color: #555;
+}
+#footer .container .links-container label:focus {
+  outline: 5px auto var(--main-text-color);
 }
 #footer .container .links-container .shop-label {
   border-radius: 5px 0 0 5px;
