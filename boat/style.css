@@ -303,6 +303,9 @@ footer {
 #footer .container .newsletter-container button:active {
   transform: translateY(0.25em);
 }
+#footer .container .newsletter-container button:focus {
+  outline: 5px auto #fff;
+}
 #footer .container .newsletter-container button img {
   height: 1.1em;
 }
