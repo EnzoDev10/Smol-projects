@@ -3,10 +3,11 @@
 - Change the color of the lorem inside the hero DONE
 - More font size on the boat rockers header on the mobile version DONE
 - Add desktop images for the products section DONE
+- Make the lines in the FAQ section partial and not full width DONE
 
-- Make the lines in the FAQ section partial and not full width
 - animation for the headers in products
 - animate details arrows
+- Improve accesibility and SEO
 - Make the newsletter functional
  */
 
@@ -162,17 +163,12 @@ picture {
 	}
 
 	#theme-toggle {
-		background-image: url(icons/light/toggler-light.svg);
-		background-size: cover;
 		width: 30px;
 		height: 30px;
 		cursor: pointer;
+		touch-action: manipulation;
 	}
 
-	#theme-toggle.dark {
-		background-image: url(icons/dark/toggler-dark.svg);
-		background-size: cover;
-	}
 }
 /* __ */
 
@@ -270,12 +266,6 @@ picture {
 	}
 }
 
-/* Table styles */
-
-.table-section {
-	display: none;
-}
-
 /* __ */
 
 #faq-section {
@@ -287,14 +277,34 @@ picture {
 		background-color: var(--secondary-bg-color);
 
 		.question {
+			position: relative;
 			cursor: pointer;
-			border-bottom: 1px solid var(--line-color);
 			padding: 15px;
+
+			&::before,
+			&::after {
+				position: absolute;
+				content: "";
+				height: 15px;
+			}
+
+			&::before {
+				width: 90%;
+				left: 4%;
+				bottom: 0;
+				border-bottom: 1px solid var(--line-color);
+			}
+		}
+
+		.last-question {
+			&::before {
+				content: none;
+			}
 		}
 
 		summary {
 			width: 100%;
-			padding: 30px 0;
+			padding: 30px 20px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -302,10 +312,6 @@ picture {
 			img {
 				height: 1.5em;
 			}
-		}
-
-		summary.active {
-			color: @logo-color;
 		}
 
 		.quest-icon {
@@ -316,8 +322,7 @@ picture {
 
 		.answer {
 			position: relative;
-			padding-bottom: 20px;
-			padding-left: 10px;
+			padding: 0 20px 20px 20px;
 		}
 	}
 
@@ -393,7 +398,7 @@ picture {
 					transform: translateY(0.25em);
 				}
 
-				&:focus {
+				&:focus-visible {
 					outline: 5px auto #fff;
 				}
 
@@ -648,7 +653,6 @@ picture {
 		.controls-container {
 			margin-top: 100px;
 
-
 			.image-container {
 				display: flex;
 				align-items: center;
@@ -662,9 +666,6 @@ picture {
 				}
 			}
 		}
-
-
-
 	}
 
 	#footer {
@@ -683,47 +684,4 @@ picture {
 		}
 	}
 	/* __ */
-}
-
-@media screen and (min-width: 1440px) {
-	/* Table Styles */
-
-	.table-section {
-		display: initial;
-		font-size: 0.9rem;
-
-		#table-bg {
-			background-image: url(images/light/table-bg-light.svg);
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			border-radius: 30px;
-			padding: 20px;
-			display: flex;
-			align-items: center;
-			width: 70%;
-			min-width: 1400px;
-
-			table {
-				background-color: #000;
-				width: 50%;
-				padding: 10px;
-
-				tbody {
-					td {
-						padding-bottom: 10px;
-					}
-
-					td:first-child {
-						color: #fff;
-					}
-
-					td:nth-child(2) {
-						color: #fff;
-						padding-left: 40px;
-					}
-				}
-			}
-		}
-	}
 }

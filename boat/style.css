@@ -2,10 +2,11 @@
 - Change the color of the lorem inside the hero DONE
 - More font size on the boat rockers header on the mobile version DONE
 - Add desktop images for the products section DONE
+- Make the lines in the FAQ section partial and not full width DONE
 
-- Make the lines in the FAQ section partial and not full width
 - animation for the headers in products
 - animate details arrows
+- Improve accesibility and SEO
 - Make the newsletter functional
  */
 .lightmode {
@@ -126,15 +127,10 @@ picture {
   height: 1em;
 }
 .navbar #theme-toggle {
-  background-image: url(icons/light/toggler-light.svg);
-  background-size: cover;
   width: 30px;
   height: 30px;
   cursor: pointer;
-}
-.navbar #theme-toggle.dark {
-  background-image: url(icons/dark/toggler-dark.svg);
-  background-size: cover;
+  touch-action: manipulation;
 }
 /* __ */
 /* About Styles */
@@ -213,10 +209,6 @@ picture {
 .info-section .image-container img {
   height: 1.5em;
 }
-/* Table styles */
-.table-section {
-  display: none;
-}
 /* __ */
 #faq-section {
   max-width: 750px;
@@ -227,22 +219,34 @@ picture {
   background-color: var(--secondary-bg-color);
 }
 #faq-section .container .question {
+  position: relative;
   cursor: pointer;
-  border-bottom: 1px solid var(--line-color);
   padding: 15px;
+}
+#faq-section .container .question::before,
+#faq-section .container .question::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+}
+#faq-section .container .question::before {
+  width: 90%;
+  left: 4%;
+  bottom: 0;
+  border-bottom: 1px solid var(--line-color);
+}
+#faq-section .container .last-question::before {
+  content: none;
 }
 #faq-section .container summary {
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 #faq-section .container summary img {
   height: 1.5em;
-}
-#faq-section .container summary.active {
-  color: #ed1c24;
 }
 #faq-section .container .quest-icon {
   width: 30px;
@@ -251,8 +255,7 @@ picture {
 }
 #faq-section .container .answer {
   position: relative;
-  padding-bottom: 20px;
-  padding-left: 10px;
+  padding: 0 20px 20px 20px;
 }
 #faq-section li {
   list-style: initial;
@@ -316,7 +319,7 @@ picture {
 #footer .container .newsletter-container button:active {
   transform: translateY(0.25em);
 }
-#footer .container .newsletter-container button:focus {
+#footer .container .newsletter-container button:focus-visible {
   outline: 5px auto #fff;
 }
 #footer .container .newsletter-container button img {
@@ -538,38 +541,4 @@ picture {
     max-width: 250px;
   }
   /* __ */
-}
-@media screen and (min-width: 1440px) {
-  /* Table Styles */
-  .table-section {
-    display: initial;
-    font-size: 0.9rem;
-  }
-  .table-section #table-bg {
-    background-image: url(images/light/table-bg-light.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    width: 70%;
-    min-width: 1400px;
-  }
-  .table-section #table-bg table {
-    background-color: #000;
-    width: 50%;
-    padding: 10px;
-  }
-  .table-section #table-bg table tbody td {
-    padding-bottom: 10px;
-  }
-  .table-section #table-bg table tbody td:first-child {
-    color: #fff;
-  }
-  .table-section #table-bg table tbody td:nth-child(2) {
-    color: #fff;
-    padding-left: 40px;
-  }
 }
