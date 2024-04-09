@@ -1,8 +1,8 @@
 /*
 - Change the color of the lorem inside the hero DONE
 - More font size on the boat rockers header on the mobile version DONE
+- Add desktop images for the products section DONE
 
-- Add desktop images for the products section
 - Make the lines in the FAQ section partial and not full width
 - animation for the headers in products
 - animate details arrows
@@ -70,6 +70,10 @@ footer {
 }
 .white-icon {
   filter: invert(83%) sepia(99%) saturate(0%) hue-rotate(87deg) brightness(102%) contrast(101%);
+}
+picture {
+  height: fit-content;
+  width: fit-content;
 }
 /* Navbar Styles */
 .navbar {
@@ -191,7 +195,6 @@ footer {
 /* characteristics styles */
 .info-section {
   text-align: center;
-  margin-bottom: 50px;
 }
 .info-section * {
   margin-bottom: 25px;
@@ -440,6 +443,9 @@ footer {
     align-self: center;
     height: 70px;
   }
+  #about-boat .flex-container .text-container p {
+    font-size: 1.2em;
+  }
   #about-boat .flex-container .text-container h1 {
     font-size: 2rem;
   }
@@ -450,7 +456,7 @@ footer {
     height: 1.1em;
   }
   #about-boat .flex-container .text-container .icon p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   /* __ */
   /* presentation desk Styles */
@@ -462,6 +468,16 @@ footer {
   }
   /* __ */
   /* Characteristics desk styles */
+  .info-section picture img {
+    max-height: 600px;
+  }
+  .info-section * {
+    margin: 0;
+  }
+  .info-section .container {
+    width: 100%;
+    text-align: right;
+  }
   .info-section h2 {
     font-size: 2.5rem;
   }
@@ -476,21 +492,30 @@ footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
-  .info-section .container img,
-  .info-section .container .info-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .info-section .info-text * {
+    margin-bottom: 25px;
+  }
+  .info-section .battery-container,
+  .info-section .cushion-container,
+  .info-section .controls-container {
+    padding-left: 50px;
   }
   .info-section .battery-container .info-text,
   .info-section .cushion-container .info-text,
   .info-section .controls-container .info-text {
-    text-align: left;
     order: -1;
+    align-items: flex-start;
+    text-align: left;
   }
   .info-section .design-container {
     grid-template-columns: 1fr 1.5fr;
+    padding-right: 50px;
+  }
+  .info-section .cushion-container {
+    margin-bottom: 100px;
+  }
+  .info-section .controls-container {
+    margin-top: 100px;
   }
   .info-section .controls-container .image-container {
     display: flex;
@@ -498,10 +523,10 @@ footer {
     justify-content: center;
   }
   .info-section .controls-container .image-container img {
-    height: 2.5em;
+    height: 3em;
   }
   .info-section .controls-container .image-container #siri-img {
-    height: 1.8em;
+    height: 2.3em;
   }
   #footer .container {
     grid-template-columns: 1fr 2fr;

@@ -152,6 +152,8 @@
 									src="icons/general/price-icon.svg"
 									alt="price icon"
 									aria-hidden="true"
+									width="50"
+									height="50"
 								/>
 								<p class="roboto-light-italic icon-text">
 									Best<span>Price</span>
@@ -162,6 +164,8 @@
 									src="icons/general/quality-icon.svg"
 									alt="quality icon"
 									aria-hidden="true"
+									width="50"
+									height="50"
 								/>
 								<p class="roboto-light-italic icon-text">
 									Best <span>Quality</span>
@@ -172,6 +176,8 @@
 									src="icons/general/security-icon.svg"
 									alt="security icon"
 									aria-hidden="true"
+									width="50"
+									height="50"
 								/>
 								<p class="roboto-light-italic icon-text">
 									Best <span>Security</span>
@@ -199,7 +205,10 @@
 			<section class="info-section">
 				<div class="container battery-container">
 					<picture>
-						<source media="(min-width:1024px)" srcset="images/general/Battery-desk.png">
+						<source
+							media="(min-width:1024px)"
+							srcset="images/general/Battery-desk.png"
+						/>
 						<img
 							src="images/dark/battery-dark.png"
 							alt="showing one of the products"
@@ -220,9 +229,11 @@
 			</section>
 			<section class="info-section">
 				<div class="container design-container">
-
-					<picture>
-						<source media="(min-width:1024px)" srcset="images/general/art-desk.png">
+					<picture class="design-img">
+						<source
+							media="(min-width:1024px)"
+							srcset="images/general/art-desk.png"
+						/>
 						<img
 							src="images/general/art-mob.png"
 							alt="Showing one of the products: the revenge"
@@ -242,9 +253,11 @@
 			</section>
 			<section class="info-section">
 				<div class="container cushion-container">
-
 					<picture>
-						<source media="(min-width:1024px)" srcset="images/general/cushion-desk.png">
+						<source
+							media="(min-width:1024px)"
+							srcset="images/general/cushion-desk.png"
+						/>
 						<img
 							src="images/general/cushion-mob.png"
 							alt="Showing one of the products:the third is the last"
@@ -365,12 +378,18 @@
 
 			<section class="info-section">
 				<div class="container controls-container">
-					<img
-						src="images/light/controls-light.png"
-						alt="The comeback"
-						id="control-img"
-						aria-hidden="true"
-					/>
+					<picture>
+						<source
+							media="(min-width:1024px)"
+							srcset="images/dark/controls-desk-dark.png"
+						/>
+						<img
+							src="images/light/controls-light.png"
+							alt="The comeback"
+							id="control-img"
+							aria-hidden="true"
+						/>
+					</picture>
 
 					<div class="info-text">
 						<h2 class="met-black">Easy Tap Controls</h2>
@@ -555,6 +574,8 @@
 						alt="logo"
 						aria-hidden="true"
 						class="footer-logo logo"
+						width="154"
+						height="64"
 					/>
 					<h4 class="met-med">Subscribe to our email newsletter!</h4>
 					<input
@@ -586,7 +607,6 @@
 							class="link-radio-label shop-label"
 							tabindex="0"
 							onfocus="showStuff('shop-list',this)"
-
 							>Shop</label
 						>
 
@@ -618,7 +638,6 @@
 							class="link-radio-label help-label"
 							tabindex="0"
 							onfocus="showStuff('help-list',this)"
-
 							>Help</label
 						>
 					</div>
