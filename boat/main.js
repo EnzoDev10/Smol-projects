@@ -1,8 +1,8 @@
 /* Menu */
 const menuToggle = document.getElementById("menu-toggler");
+let menu = document.getElementById("nav-menu");
 
 menuToggle.addEventListener("click", function () {
-	let menu = document.getElementById("nav-menu");
 	if (menu.classList.contains("active")) {
 		menu.classList.remove("active");
 		menuToggle.style.backgroundImage = "url('icons/light/menu-light.svg')";
@@ -11,6 +11,10 @@ menuToggle.addEventListener("click", function () {
 		menuToggle.style.backgroundImage = "url('icons/light/close-light1.svg')";
 	}
 });
+
+window.addEventListener("resize", function() {
+	if (window.innerWidth > 1023) menu.classList.remove("active");
+  });
 
 /* Change between footer links */
 // gets all the radio buttons and each list on the footer
