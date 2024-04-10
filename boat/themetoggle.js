@@ -1,3 +1,4 @@
+localStorage.clear();
 // Get all the elements that will be changed based on the theme
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#theme-toggle");
@@ -64,16 +65,31 @@ const disableDarkMode = () => {
 	});
 
 	// 2. update darkmode in the localStorage
-	localStorage.setItem("darkMode", null);
+	localStorage.setItem("darkMode", "disabled");
 };
 
-// checks on page load if the last time the darkmode was enabled
-// if it is, enables darkmode again
-if (darkMode === "enabled") {
+// Gets the preferred theme of the user
+const getPreferredScheme = () =>
+	window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+		? "dark"
+		: "light";
+
+let systemPreference = getPreferredScheme();
+
+// Checks first if the local item "darkMode" exists
+if (localStorage.getItem("darkMode") != null) {
+	// If it does, checks the value and enables or not the dark theme
+	if (darkMode === "enabled") {
+		enableDarkMode();
+	} else {
+		disableDarkMode();
+	}
+	// If the item is empty, checks the preferred theme of the user
+} else if (systemPreference === "dark") {
 	enableDarkMode();
 }
 
-// on click checks if darkmode is enabled or not
+// Changes theme on button click
 darkModeToggle.addEventListener("click", () => {
 	darkMode = localStorage.getItem("darkMode");
 
