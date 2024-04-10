@@ -6,6 +6,7 @@
 
 - animation for the headers in products
 - animate details arrows
+- Set theme based on the prefered theme by the user
 - Improve accesibility and SEO
 - Make the newsletter functional
  */
@@ -244,17 +245,16 @@ picture {
   align-items: center;
   justify-content: space-between;
 }
-#faq-section .container summary img {
+#faq-section .container summary .faq-icon {
   height: 1.5em;
-}
-#faq-section .container .quest-icon {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
+  transition: 0.3s;
 }
 #faq-section .container .answer {
   position: relative;
   padding: 0 20px 20px 20px;
+}
+#faq-section details[open] .faq-icon {
+  transform: rotate(-180deg);
 }
 #faq-section li {
   list-style: initial;
