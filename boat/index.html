@@ -23,6 +23,7 @@
 			as="font"
 			type="font/woff2"
 			crossorigin
+			defer
 		/>
 		<link
 			rel="preload"
@@ -30,6 +31,7 @@
 			as="font"
 			type="font/woff2"
 			crossorigin
+			defer
 		/>
 		<link
 			rel="preload"
@@ -37,6 +39,7 @@
 			as="font"
 			type="font/woff2"
 			crossorigin
+			defer
 		/>
 		<link
 			rel="preload"
@@ -44,6 +47,7 @@
 			as="font"
 			type="font/woff2"
 			crossorigin
+			defer
 		/>
 		<link
 			rel="preload"
@@ -51,7 +55,12 @@
 			as="font"
 			type="font/woff2"
 			crossorigin
+			defer
 		/>
+
+		<link rel="preload" fetchpriority="high" as="image" href="images/general/about-bg-mob.svg">
+		
+		<link rel="preload" fetchpriority="high" as="image" href="images/general/about-bg-desk.svg">
 
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="fonts.css" />
@@ -61,13 +70,13 @@
 		<header>
 			<nav class="navbar">
 				<button id="menu-toggler"></button>
-					<img
-						class="logo"
-						src="icons/light/logo-light.png"
-						alt="Company logo"
-						aria-hidden="true"
-						width="120"
-						height="50"
+				<img
+					class="logo"
+					src="icons/light/logo-light.png"
+					alt="Company logo"
+					aria-hidden="true"
+					width="120"
+					height="50"
 				/>
 				<ul class="met-light" id="nav-menu">
 					<li class="nav-item">
