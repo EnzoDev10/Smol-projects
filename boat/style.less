@@ -1,13 +1,5 @@
 // TODO
 /*
-- Change the color of the lorem inside the hero DONE
-- More font size on the boat rockers header on the mobile version DONE
-- Add desktop images for the products section DONE
-- Make the lines in the FAQ section partial and not full width DONE
-- animate details arrows DONE
-- Set theme based on the prefered theme by the user DONE
-
-- Improve accesibility and SEO
 - Make the newsletter functional
  */
 
@@ -151,6 +143,7 @@ picture {
 			font-size: 1.2rem;
 			border-bottom: solid 1px var(--line-color);
 			padding: 2px 10px;
+			padding-left: 25px;
 
 			.triangle-icon {
 				display: none;
@@ -309,7 +302,7 @@ picture {
 
 			.faq-icon {
 				height: 1.5em;
-				transition: .3s;
+				transition: 0.3s;
 			}
 		}
 
@@ -318,10 +311,10 @@ picture {
 			padding: 0 20px 20px 20px;
 		}
 	}
-	
+
 	details[open] .faq-icon {
 		transform: rotate(-180deg);
-	  }
+	}
 
 	li {
 		list-style: initial;
@@ -667,6 +660,7 @@ picture {
 
 	#footer {
 		.container {
+			min-height: 220px;
 			grid-template-columns: 1fr 2fr;
 
 			.newsletter-container {
