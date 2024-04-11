@@ -456,14 +456,16 @@ picture {
   /* presentation desk Styles */
   #product {
     padding-top: 70px;
+    margin-bottom: 50px;
   }
   #product h2 {
     font-size: 2rem;
   }
   /* __ */
   /* Characteristics desk styles */
-  .info-section picture img {
-    max-height: 600px;
+  .info-section {
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .info-section * {
     margin: 0;
@@ -485,6 +487,12 @@ picture {
   .info-section .container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+  }
+  .info-section .right {
+    text-align: right;
+  }
+  .info-section .right picture img {
+    float: right;
   }
   .info-section .info-text * {
     margin-bottom: 25px;
@@ -517,12 +525,20 @@ picture {
     justify-content: center;
   }
   .info-section .controls-container .image-container img {
+    width: initial;
     height: 3em;
   }
   .info-section .controls-container .image-container #siri-img {
     height: 2.3em;
   }
+  /* Faq Desk Styles */
+  #faq-section {
+    margin-top: 50px;
+  }
+  /* Footer desk styles */
   #footer .container {
+    max-width: 1440px;
+    margin: 0 auto;
     min-height: 220px;
     grid-template-columns: 1fr 2fr;
   }
@@ -533,4 +549,22 @@ picture {
     max-width: 250px;
   }
   /* __ */
+}
+@media screen and (min-width: 1440px) {
+  .battery-container picture img {
+    width: 537px;
+    height: 535px;
+  }
+  .design-container picture img {
+    width: 490px;
+    height: 700px;
+  }
+  .cushion-container picture img {
+    width: 537px;
+    height: 436px;
+  }
+  .controls-container picture img {
+    width: 537px;
+    height: 500px;
+  }
 }

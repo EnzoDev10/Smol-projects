@@ -17,7 +17,7 @@ const enableDarkMode = () => {
 	// adds classes that change icons, background and src of images
 	menuToggle.classList.add("white-icon");
 	darkModeImg.src = "icons/dark/toggler-dark.svg";
-	controlImg.src = "images/dark/controls-dark.png";
+	controlImg.src = "images/dark/controls-dark.webp";
 	siriImg.src = "images/dark/Siri-dark.svg";
 
 	Array.from(logos).forEach((logo) => {
