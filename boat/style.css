@@ -550,21 +550,3 @@ picture {
   }
   /* __ */
 }
-@media screen and (min-width: 1440px) {
-  .battery-container picture img {
-    width: 537px;
-    height: 535px;
-  }
-  .design-container picture img {
-    width: 490px;
-    height: 700px;
-  }
-  .cushion-container picture img {
-    width: 537px;
-    height: 436px;
-  }
-  .controls-container picture img {
-    width: 537px;
-    height: 500px;
-  }
-}
