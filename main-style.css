@@ -1,7 +1,20 @@
+@font-face {
+  font-family: "Urban Asked";
+  src: url("main-media/fonts/urban-asked.woff2") format("woff2");
+  src: url("main-media/fonts/urban-asked.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
 }
 html,
 body {
@@ -9,36 +22,98 @@ body {
   height: 100%;
 }
 body {
+  background-image: url(main-media/images/bgs/body-bg.svg);
+  background-position: center;
+  font-family: "urban Asked", sans-serif;
+  color: #fff;
+}
+body main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: #242038;
-  font-family: Tahoma, sans-serif;
+  padding: 30px 0 90px 0;
 }
 body .projects-container {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
 body .projects-container .project {
-  background-color: #a5f8d3;
-  box-shadow: 3px 3px 3px #111;
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 360px;
+  background-position: center;
+  background-size: 390px;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 100%;
+}
+body .projects-container .project .container {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  gap: 10px;
+  width: 100%;
 }
-body .projects-container .project a {
-  padding: 20px 25px;
-  color: #242038;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 800;
-  transition: all 200ms;
+body .projects-container .project .container a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* Places the link above everything else in the div */
 }
-body .projects-container .project a:focus,
-body .projects-container .project a:hover {
-  transform: scale(1.4);
-  outline: 3px solid #a5f8d3;
+body .projects-container .project .container img {
+  height: 7rem;
+}
+body .projects-container .project .container.reverse {
+  justify-content: flex-start;
+}
+body .projects-container .project .container.reverse img {
+  order: -1;
+}
+body #boat {
+  background-image: url(main-media/images/bgs/boats-bg.svg);
+}
+body #boat span {
+  font-size: 3rem;
+  margin-right: 25px;
+}
+body #pharmacy {
+  background-image: url(main-media/images/bgs/pharmacy-bg.svg);
+}
+body #pharmacy .container {
+  gap: 0;
+}
+body #pharmacy .container span {
+  font-size: 2.5rem;
+}
+body #agency {
+  background-image: url(main-media/images/bgs/agency-bg.svg);
+  font-size: 2.3rem;
+}
+body #agency .stupid-p-container {
+  padding-top: 20px;
+}
+body #agency .stupid-p-container .second-p {
+  padding-left: 60px;
+  line-height: 10px;
+}
+body #bootcamp {
+  background-image: url(main-media/images/bgs/boot-bg.svg);
+  justify-content: flex-start;
+}
+body #bootcamp span {
+  padding-top: 20px;
+  font-size: 3.3rem;
+}
+body #bootcamp img {
+  height: 6rem;
+  order: -1;
 }
 @media screen and (min-width: 768px) {
   .projects-container {

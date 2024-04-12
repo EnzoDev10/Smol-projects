@@ -1,10 +1,25 @@
-@body-color: #242038;
-@card-color: #a5f8d3;
+@font-face {
+	font-family: "Urban Asked";
+	src: url("main-media/fonts/urban-asked.woff2") format("woff2");
+	src: url("main-media/fonts/urban-asked.ttf") format("truetype");
+}
+
+@text-color: #fff;
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 html,
@@ -14,47 +29,119 @@ body {
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: @body-color;
-	font-family: Tahoma, sans-serif;
-    
-    .projects-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 40px;
-        
-        .project {
-            background-color: @card-color;
-            box-shadow: 3px 3px 3px #111;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-            a {
-                padding: 20px 25px;
-                color: @body-color;
-                text-decoration: none;
-                font-size: 1.2em;
-                font-weight: 800;
-                transition: all 200ms;
-            }
-            a:focus,
-            a:hover {
-                transform: scale(1.4);
-                outline: 3px solid @card-color;
-            }
-            
+	background-image: url(main-media/images/bgs/body-bg.svg);
+	background-position: center;
+	font-family: "urban Asked", sans-serif;
+	color: @text-color;
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 0 90px 0;
+	}
+	.projects-container {
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 40px;
+
+		.project {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			max-width: 360px;
+			background-position: center;
+			background-size: 390px;
+			background-repeat: no-repeat;
+            margin:auto;
+
+			width: 100%;
+
+			.container {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+                gap:10px;
+				width: 100%;
+				a {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					z-index: 10; /* Places the link above everything else in the div */
+				}
+
+				img {
+					height: 7rem;
+				}
+			}
+
+			.container.reverse {
+				justify-content: flex-start;
+
+				img {
+					order: -1;
+				}
+			}
+		}
+	}
+
+	#boat {
+		background-image: url(main-media/images/bgs/boats-bg.svg);
+        span {
+            font-size:3rem;
+            margin-right: 25px;
         }
-    }
+	}
+
+	#pharmacy {
+		background-image: url(main-media/images/bgs/pharmacy-bg.svg);
+
+        .container{ 
+            gap:0;
+            
+            span {            
+                font-size:2.5rem;
+            }
+        }
+	}
+
+	#agency {
+		background-image: url(main-media/images/bgs/agency-bg.svg);
+
+        font-size: 2.3rem;
+    
+        .stupid-p-container {
+            padding-top: 20px;
+            .second-p {
+                padding-left: 60px;
+                line-height: 10px;
+            }
+        }
+
+	}
+
+	#bootcamp {
+		background-image: url(main-media/images/bgs/boot-bg.svg);
+		justify-content: flex-start;
+
+        span {
+            padding-top: 20px;
+            font-size:3.3rem;
+        }
+
+		img {
+			height: 6rem;
+			order: -1;
+		}
+	}
 }
 
-
-
-
 @media screen and (min-width: 768px) {
-    .projects-container {
+	.projects-container {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
