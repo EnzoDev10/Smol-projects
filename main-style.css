@@ -49,13 +49,18 @@ body .projects-container .project {
   background-size: 390px;
   background-repeat: no-repeat;
   margin: auto;
+  font-size: 2.8rem;
   width: 100%;
+}
+body .projects-container .project a {
+  text-indent: -9999px;
 }
 body .projects-container .project .container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
+  position: relative;
   width: 100%;
 }
 body .projects-container .project .container a {
@@ -76,11 +81,51 @@ body .projects-container .project .container.reverse {
 body .projects-container .project .container.reverse img {
   order: -1;
 }
+body .projects-container .project .state-container {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .projects-container .project .state-container input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+body .projects-container .project .state-container .cross-box {
+  background-image: url(main-media/icons/cross.svg);
+}
+body .projects-container .project .state-container .cross-box:checked {
+  background-image: url(main-media/icons//cross-active.svg);
+}
+body .projects-container .project .state-container .exclamation-box {
+  background-image: url(main-media/icons/exclamation.svg);
+}
+body .projects-container .project .state-container .exclamation-box:checked {
+  background-image: url(main-media/icons//exclamation-active.svg);
+}
+body .projects-container .project .state-container .check-box {
+  background-image: url(main-media/icons/check.svg);
+}
+body .projects-container .project .state-container .check-box:checked {
+  background-image: url(main-media/icons//check-active.svg);
+}
 body #boat {
   background-image: url(main-media/images/bgs/boats-bg.svg);
 }
 body #boat span {
-  font-size: 3rem;
   margin-right: 25px;
 }
 body #pharmacy {
@@ -90,30 +135,21 @@ body #pharmacy .container {
   gap: 0;
 }
 body #pharmacy .container span {
-  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
-body #agency {
+#agency {
   background-image: url(main-media/images/bgs/agency-bg.svg);
-  font-size: 2.3rem;
 }
-body #agency .stupid-p-container {
-  padding-top: 20px;
-}
-body #agency .stupid-p-container .second-p {
+#agency .stupid-p-container .second-p {
   padding-left: 60px;
   line-height: 10px;
 }
-body #bootcamp {
+#bootcamp {
   background-image: url(main-media/images/bgs/boot-bg.svg);
   justify-content: flex-start;
 }
-body #bootcamp span {
-  padding-top: 20px;
-  font-size: 3.3rem;
-}
-body #bootcamp img {
+#bootcamp img {
   height: 6rem;
-  order: -1;
 }
 @media screen and (min-width: 768px) {
   .projects-container {
