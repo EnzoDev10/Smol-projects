@@ -44,7 +44,7 @@ body {
 		width: 90%;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		gap: 40px;
+		gap: 80px;
 
 		.project {
 			position: relative;
@@ -95,13 +95,13 @@ body {
 
 			.state-container {
 				width: 120px;
-				height: 60px;
+				height: fit-content;
 				position: absolute;
 				margin-left: auto;
 				margin-right: auto;
 				right: 0;
 				left: 0;
-				bottom: -40px;
+				bottom: -60px;
 				text-align: center;
 				display: flex;
 				align-items: center;
@@ -110,11 +110,11 @@ body {
 				input[type="radio"] {
 					appearance: none;
 					-webkit-appearance: none;
-					background-position:center;
+					background-position: center;
 					background-size: contain;
 					background-repeat: no-repeat;
-					width: 35px;
-					height: 35px;
+					width: 50px;
+					height: 50px;
 				}
 
 				.cross-box {
@@ -185,7 +185,4 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-	.projects-container {
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
