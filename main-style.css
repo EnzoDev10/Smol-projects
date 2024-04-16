@@ -33,29 +33,33 @@ body main {
   align-items: center;
   padding: 30px 0 90px 0;
 }
-body .projects-container {
+body main .projects-container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   gap: 80px;
 }
-body .projects-container .project {
+body main .projects-container .project {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-width: 360px;
+  justify-content: center;
+  max-width: 390px;
   background-position: center;
-  background-size: 390px;
+  background-size: 400px;
   background-repeat: no-repeat;
   margin: auto;
   font-size: 2.8rem;
   width: 100%;
 }
-body .projects-container .project a {
+body main .projects-container .project:hover + img {
+  transform: scale(1.2);
+}
+body main .projects-container .project a {
   text-indent: -9999px;
 }
-body .projects-container .project .container {
+body main .projects-container .project .container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -63,7 +67,7 @@ body .projects-container .project .container {
   position: relative;
   width: 100%;
 }
-body .projects-container .project .container a {
+body main .projects-container .project .container a {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -72,16 +76,16 @@ body .projects-container .project .container a {
   z-index: 10;
   /* Places the link above everything else in the div */
 }
-body .projects-container .project .container img {
+body main .projects-container .project .container img {
   height: 7rem;
 }
-body .projects-container .project .container.reverse {
+body main .projects-container .project .container.reverse {
   justify-content: flex-start;
 }
-body .projects-container .project .container.reverse img {
+body main .projects-container .project .container.reverse img {
   order: -1;
 }
-body .projects-container .project .state-container {
+body main .projects-container .project .state-container {
   width: 120px;
   height: fit-content;
   position: absolute;
@@ -95,7 +99,7 @@ body .projects-container .project .state-container {
   align-items: center;
   justify-content: space-around;
 }
-body .projects-container .project .state-container input[type="radio"] {
+body main .projects-container .project .state-container input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   background-position: center;
@@ -104,50 +108,99 @@ body .projects-container .project .state-container input[type="radio"] {
   width: 50px;
   height: 50px;
 }
-body .projects-container .project .state-container .cross-box {
+body main .projects-container .project .state-container .cross-box {
   background-image: url(main-media/icons/cross.svg);
 }
-body .projects-container .project .state-container .cross-box:checked {
+body main .projects-container .project .state-container .cross-box:checked {
   background-image: url(main-media/icons//cross-active.svg);
 }
-body .projects-container .project .state-container .exclamation-box {
+body main .projects-container .project .state-container .exclamation-box {
   background-image: url(main-media/icons/exclamation.svg);
 }
-body .projects-container .project .state-container .exclamation-box:checked {
+body main .projects-container .project .state-container .exclamation-box:checked {
   background-image: url(main-media/icons//exclamation-active.svg);
 }
-body .projects-container .project .state-container .check-box {
+body main .projects-container .project .state-container .check-box {
   background-image: url(main-media/icons/check.svg);
 }
-body .projects-container .project .state-container .check-box:checked {
+body main .projects-container .project .state-container .check-box:checked {
   background-image: url(main-media/icons//check-active.svg);
 }
-body #boat {
+body main #boat {
   background-image: url(main-media/images/bgs/boats-bg.svg);
 }
-body #boat span {
-  margin-right: 25px;
+body main #boat span {
+  margin-right: 40px;
 }
-body #pharmacy {
+body main #pharmacy {
   background-image: url(main-media/images/bgs/pharmacy-bg.svg);
 }
-body #pharmacy .container {
+body main #pharmacy .container {
   gap: 0;
 }
-body #pharmacy .container span {
+body main #pharmacy .container span {
   margin-bottom: 20px;
 }
-#agency {
+body #agency {
   background-image: url(main-media/images/bgs/agency-bg.svg);
 }
-#agency .stupid-p-container .second-p {
+body #agency .stupid-p-container .second-p {
   padding-left: 60px;
   line-height: 10px;
 }
-#bootcamp {
+body #bootcamp {
   background-image: url(main-media/images/bgs/boot-bg.svg);
   justify-content: flex-start;
 }
-#bootcamp img {
+body #bootcamp span {
+  margin-top: 10px;
+}
+body #bootcamp img {
   height: 6rem;
+}
+@media screen and (min-width: 1024px) {
+  body main .projects-container {
+    gap: 10px 100px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main .projects-container .project {
+    max-width: 450px;
+    height: 200px;
+    background-size: cover;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  body main .projects-container .project .container img {
+    transform: scale(1.3);
+  }
+  body main .projects-container .project .state-container {
+    margin-right: 0;
+    bottom: initial;
+    flex-direction: column;
+    right: -150px;
+  }
+  body main .projects-container .project .state-container.reverse {
+    margin-left: 0;
+    bottom: initial;
+    flex-direction: column;
+    left: -150px;
+  }
+  body main .projects-container #boat .container span {
+    font-size: 3.5rem;
+    margin-right: 80px;
+  }
+  body main .projects-container #pharmacy .container span {
+    margin-left: 40px;
+  }
+  body main .projects-container #agency .stupid-p-container {
+    margin-right: 20px;
+  }
+  body main .projects-container #bootcamp {
+    justify-content: center;
+  }
+  body main .projects-container #bootcamp span {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
 }
