@@ -16,6 +16,7 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Lato:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="css/shared.css" />
 		<link rel="stylesheet" href="css/style.css" />
 
 		<title>Clone</title>
@@ -23,20 +24,20 @@
 	<body>
 		<!-- Navbar -->
 		<div class="navbar">
-			<div class="container flex">
+			<div class="container">
 				<h1 class="logo">Loruki.</h1>
 				<nav>
-					<ul>
+					<ul class="flex">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="features.html">Features</a></li>
-						<li><a href="docs.html">Home</a></li>
+						<li><a href="docs.html">Docs</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 
 		<!-- Showcase -->
-		<section class="showcase">
+		<section class="showcase hero">
 			<div class="container grid">
 				<div class="showcase-text">
 					<h1>Easier Deployment</h1>
@@ -48,7 +49,7 @@
 					<a href="features.html" class="btn btn-outline">Read More</a>
 				</div>
 
-				<div class="showcase-form">
+				<div class="showcase-form card">
 					<h2>Request a Demo</h2>
 					<form>
 						<div class="form-control">
@@ -101,113 +102,127 @@
 
 		<!-- Installation -->
 		<section class="installation">
-			<div class="container">
+			<div class="container flex">
 				<img
 					src="images/cli.png"
 					alt="how to install cli; install -g loruki-cli"
 					class="cli-img"
 				/>
 				<div class="installation-info">
-					<p>Easy to use, cross platform CLI</p>
-					<p>Deploy in seconds</p>
+					<div class="card">
+						<p>Easy to use, cross platform CLI</p>
+					</div>
+					<div class="card">
+						<p>Deploy in seconds</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Hosting -->
-		<section class="hosting">
-			<div class="container hosting-text">
-				<h4>Extreme Cloud Hosting</h4>
-				<p>
-					Cloud hosting like you've never seen, Fast, efficient and scalable
-				</p>
-				<a href="#" class="btn"></a>
+		<section class="hosting primary-bg">
+			<div class="container flex">
+				<div class="hosting-text">
+					<h4>Extreme Cloud Hosting</h4>
+					<p>
+						Cloud hosting like you've never seen, Fast, efficient and scalable
+					</p>
+					<a href="features.html" class="btn btn-dark"></a>
+				</div>
+				<img
+					src="images/cloud.png"
+					alt="An icon that represent the cloud as a service"
+					aria-hidden="true"
+				/>
 			</div>
-			<img
-				src="images/cloud.png"
-				alt="An icon that represent the cloud as a service"
-				aria-hidden="true"
-			/>
 		</section>
 
 		<!-- Languages -->
 		<section class="languages">
 			<div class="container">
 				<h4>Supported Languages</h4>
-				<div class="card">
-					<p>Node.js</p>
-					<img
-						src="images/logos/node.png"
-						alt="Node.js logo"
-						aria-hidden="true"
-					/>
-				</div>
-				<div class="card">
-					<p>Python</p>
-					<img
-						src="images/logos/python.png"
-						alt="python logo"
-						aria-hidden="true"
-					/>
-				</div>
-				<div class="card">
-					<p>C#</p>
-					<img src="images/logos/csharp.png" alt="C# logo" aria-hidden="true" />
-				</div>
-				<div class="card">
-					<p>Ruby</p>
-					<img
-						src="images//logos/ruby.png"
-						alt="Ruby logo"
-						aria-hidden="true"
-					/>
-				</div>
-				<div class="card">
-					<p>PHP</p>
-					<img src="images/logos/php.png" alt="PHP logo" aria-hidden="true" />
-				</div>
-				<div class="card">
-					<p>Scala</p>
-					<img
-						src="images/logos/scala.png"
-						alt="Scala logo"
-						aria-hidden="true"
-					/>
-				</div>
-				<div class="card">
-					<p>Clojure</p>
-					<img
-						src="images/logos/clojure.png"
-						alt="Clojure logo"
-						aria-hidden="true"
-					/>
+				<div class="grid">
+					<div class="card">
+						<p>Node.js</p>
+						<img
+							src="images/logos/node.png"
+							alt="Node.js logo"
+							aria-hidden="true"
+						/>
+					</div>
+					<div class="card">
+						<p>Python</p>
+						<img
+							src="images/logos/python.png"
+							alt="python logo"
+							aria-hidden="true"
+						/>
+					</div>
+					<div class="card">
+						<p>C#</p>
+						<img
+							src="images/logos/csharp.png"
+							alt="C# logo"
+							aria-hidden="true"
+						/>
+					</div>
+					<div class="card">
+						<p>Ruby</p>
+						<img
+							src="images//logos/ruby.png"
+							alt="Ruby logo"
+							aria-hidden="true"
+						/>
+					</div>
+					<div class="card">
+						<p>PHP</p>
+						<img src="images/logos/php.png" alt="PHP logo" aria-hidden="true" />
+					</div>
+					<div class="card">
+						<p>Scala</p>
+						<img
+							src="images/logos/scala.png"
+							alt="Scala logo"
+							aria-hidden="true"
+						/>
+					</div>
+					<div class="card">
+						<p>Clojure</p>
+						<img
+							src="images/logos/clojure.png"
+							alt="Clojure logo"
+							aria-hidden="true"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
 
-        <!-- Footer -->
-        <footer>
-            <div>
-                <h5>Loruki</h5>
-                <p>Copyright © 2020</p>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Features</li>
-                        <li>Docs</li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <ul>
-                    <li><i class="fab fa-github fa-2x"></i></li>
-                    <li><i class="fab fa-facebook fa-2x"></i></li>
-                    <li><i class="fab fa-instagram fa-2x"></i></li>
-                    <li><i class="fab fa-twitter fa-2x"></i></li>
-                </ul>
-            </div>
-        </footer>
+		<!-- Footer -->
+		<footer>
+			<div class="container flex">
+				<div>
+					<h5>Loruki</h5>
+					<p>Copyright © 2020</p>
+				</div>
+				<div>
+					<nav>
+						<ul>
+							<li>Home</li>
+							<li>Features</li>
+							<li>Docs</li>
+						</ul>
+					</nav>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fab fa-github fa-2x"></i></li>
+						<li><i class="fab fa-facebook fa-2x"></i></li>
+						<li><i class="fab fa-instagram fa-2x"></i></li>
+						<li><i class="fab fa-twitter fa-2x"></i></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

@@ -16,19 +16,21 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Lato:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="css/shared.css" />
 		<link rel="stylesheet" href="css/style.css" />
 
 		<title>Document</title>
 	</head>
 	<body>
+		<!-- Navbar -->
 		<div class="navbar">
-			<div class="container flex">
+			<div class="container">
 				<h1 class="logo">Loruki.</h1>
 				<nav>
-					<ul>
+					<ul class="flex">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="features.html">Features</a></li>
-						<li><a href="docs.html">Home</a></li>
+						<li><a href="docs.html">Docs</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -36,7 +38,7 @@
 
 		<!-- Hero -->
 		<section class="docs-hero hero">
-			<div class="container">
+			<div class="container flex">
 				<div class="hero-text">
 					<h1>Docs</h1>
 					<p>Learn how to work with the Loruki platform</p>
@@ -47,8 +49,8 @@
 
 		<!-- Tutorials ? -->
 		<section class="tutorials">
-			<div class="container">
-				<div class="tut-nav card">
+			<div class="container flex">
+				<div class="t-nav card">
 					<p class="bolder">Essentials</p>
 					<ul class="docs-list">
 						<li><a href="#">Introduction</a></li>
@@ -63,7 +65,7 @@
 						<li><a href="#">Upgrade & downgrade</a></li>
 					</ul>
 				</div>
-				<div class="tut-intro card">
+				<div class="t-intro card">
 					<h3>Introduction</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -107,26 +109,28 @@
 		</section>
 
 		<footer>
-			<div>
-				<h5>Loruki</h5>
-				<p>Copyright © 2020</p>
-			</div>
-			<div>
-				<nav>
+			<div class="container flex">
+				<div>
+					<h5>Loruki</h5>
+					<p>Copyright © 2020</p>
+				</div>
+				<div>
+					<nav>
+						<ul>
+							<li>Home</li>
+							<li>Features</li>
+							<li>Docs</li>
+						</ul>
+					</nav>
+				</div>
+				<div>
 					<ul>
-						<li>Home</li>
-						<li>Features</li>
-						<li>Docs</li>
+						<li><i class="fab fa-github fa-2x"></i></li>
+						<li><i class="fab fa-facebook fa-2x"></i></li>
+						<li><i class="fab fa-instagram fa-2x"></i></li>
+						<li><i class="fab fa-twitter fa-2x"></i></li>
 					</ul>
-				</nav>
-			</div>
-			<div>
-				<ul>
-					<li><i class="fab fa-github fa-2x"></i></li>
-					<li><i class="fab fa-facebook fa-2x"></i></li>
-					<li><i class="fab fa-instagram fa-2x"></i></li>
-					<li><i class="fab fa-twitter fa-2x"></i></li>
-				</ul>
+				</div>
 			</div>
 		</footer>
 	</body>
