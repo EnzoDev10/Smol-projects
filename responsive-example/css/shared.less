@@ -31,7 +31,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: @white;
 }
 
 img {
@@ -45,10 +45,6 @@ img {
 .primary-bg {
 	background-color: @primary-color;
 	color: @white;
-
-	a {
-		color: @white;
-	}
 }
 
 .container {
@@ -99,8 +95,43 @@ img {
 				padding: 10px;
 
 				&:hover {
-					border-bottom: 2px solid @light-color;
+					box-shadow: inset 0 0 0 1px @light-color;
+					box-shadow: 0 4px 1px -2px @light-color;
 				}
+			}
+		}
+	}
+}
+
+/* Footer */
+
+footer {
+	background-color: @dark-color;
+	color: @white;
+	padding: 64px 0;
+
+	.flex {
+		gap: 25px;
+
+		h5 {
+			font-size: 32px;
+			font-weight: 500;
+		}
+
+		.socials {
+			flex-direction: row;
+
+			.github-icon:hover {
+				color: #24292e;
+			}
+			.facebook-icon:hover {
+				color: #4267b2;
+			}
+			.instagram-icon:hover {
+				color: #c13584;
+			}
+			.twitter-icon:hover {
+				color: #1da1f2;
 			}
 		}
 	}
