@@ -1,0 +1,54 @@
+/* Colors */
+.flex,
+.installation-info {
+  text-align: center;
+  align-items: center;
+}
+/* Showcase */
+.showcase {
+  position: relative;
+}
+.showcase .flex {
+  gap: 30px;
+}
+.showcase .flex .showcase-text {
+  padding-top: 40px;
+}
+.showcase .flex .showcase-text h1 {
+  margin: 10px 0;
+}
+.showcase .flex .showcase-text p {
+  margin: 25px 0;
+}
+.showcase .flex .showcase-form {
+  min-width: 300px;
+  min-height: 300px;
+  padding: 42px;
+  color: #333;
+  text-align: left;
+  position: relative;
+  bottom: -70px;
+  z-index: 100;
+}
+.showcase .flex .showcase-form h2 {
+  font-weight: 300;
+}
+.showcase .flex .showcase-form .form-control {
+  margin: 25px 0;
+}
+.showcase .flex .showcase-form .form-control input {
+  all: unset;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
+}

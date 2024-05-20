@@ -1,0 +1,65 @@
+@import "variables.less";
+
+.flex,
+.installation-info {
+	text-align: center;
+	align-items: center;
+}
+
+/* Showcase */
+
+.showcase {
+	position: relative;
+	.flex {
+		gap: 30px;
+
+		.showcase-text {
+			padding-top: 40px;
+
+			h1 {
+				margin: 10px 0;
+			}
+
+			p {
+				margin: 25px 0;
+			}
+		}
+
+		.showcase-form {
+			min-width: 300px;
+			min-height: 300px;
+			padding: 42px;
+			color: @dark-text-color;
+			text-align: left;
+			position: relative;
+			bottom: -70px;
+			z-index: 100;
+
+			h2 {
+				font-weight: 300;
+			}
+
+			.form-control {
+				margin: 25px 0;
+
+				input {
+					all: unset;
+					width: 100%;
+					border-bottom: 1px solid #ccc;
+				}
+			}
+		}
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		height: 100px;
+		bottom: -70px;
+		right: 0;
+		left: 0;
+		background-color: @white;
+		transform: skewY(-3deg);
+	}
+}
