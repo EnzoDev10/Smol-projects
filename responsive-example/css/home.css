@@ -1,9 +1,4 @@
 /* Colors */
-.flex,
-.installation-info {
-  text-align: center;
-  align-items: center;
-}
 /* Showcase */
 .showcase {
   position: relative;
@@ -32,6 +27,7 @@
 }
 .showcase .flex .showcase-form h2 {
   font-weight: 300;
+  font-size: 24px;
 }
 .showcase .flex .showcase-form .form-control {
   margin: 25px 0;
@@ -40,6 +36,7 @@
   all: unset;
   width: 100%;
   border-bottom: 1px solid #ccc;
+  padding: 3px;
 }
 .showcase::before,
 .showcase::after {
@@ -51,4 +48,52 @@
   left: 0;
   background-color: #fff;
   transform: skewY(-3deg);
+}
+/* Stats */
+.stats-section .container {
+  margin-top: 100px;
+}
+.stats-section .container .stats {
+  margin: 50px;
+  gap: 25px;
+}
+.stats-section .container .stats .stat {
+  font-weight: bold;
+}
+.stats-section .container .stats .stat i {
+  width: 48px;
+  height: 48px;
+}
+.stats-section .container .stats .stat .principal-text {
+  font-size: 35px;
+}
+.stats-section .container .stats .stat .secondary-text {
+  color: #1c3fa8;
+  font-size: 20px;
+}
+.stats-section .installation {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+.stats-section .installation .card {
+  width: 100%;
+  text-align: left;
+  font-size: 19px;
+}
+.hosting {
+  margin-top: 50px;
+  padding: 40px 0;
+}
+.hosting .flex {
+  gap: 25px;
+}
+.hosting .hosting-text h2 {
+  font-weight: 300;
+  font-size: 48px;
+}
+.hosting .hosting-text p {
+  font-size: 20px;
 }

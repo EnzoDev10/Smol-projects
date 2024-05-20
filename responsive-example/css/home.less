@@ -1,11 +1,5 @@
 @import "variables.less";
 
-.flex,
-.installation-info {
-	text-align: center;
-	align-items: center;
-}
-
 /* Showcase */
 
 .showcase {
@@ -37,6 +31,7 @@
 
 			h2 {
 				font-weight: 300;
+				font-size: 24px;
 			}
 
 			.form-control {
@@ -46,6 +41,7 @@
 					all: unset;
 					width: 100%;
 					border-bottom: 1px solid #ccc;
+					padding: 3px;
 				}
 			}
 		}
@@ -61,5 +57,67 @@
 		left: 0;
 		background-color: @white;
 		transform: skewY(-3deg);
+	}
+}
+
+/* Stats */
+
+.stats-section {
+	.container {
+		margin-top: 100px;
+
+		.stats {
+			margin: 50px;
+			gap: 25px;
+
+			.stat {
+				font-weight: bold;
+
+				i {
+					width: 48px;
+					height: 48px;
+				}
+				.principal-text {
+					font-size: 35px;
+				}
+
+				.secondary-text {
+					color: @secondary-color;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.installation {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		gap: 20px;
+		width: 95%;
+		margin: 0 auto;
+		.card {
+			width: 100%;
+			text-align: left;
+			font-size: 19px;
+		}
+	}
+}
+
+.hosting {
+	margin-top: 50px;
+	padding: 40px 0;
+
+	.flex {
+		gap: 25px;
+	}
+
+	.hosting-text {
+		h2 {
+			font-weight: 300;
+			font-size: 48px;
+		}
+
+		p {
+			font-size: 20px;
+		}
 	}
 }
