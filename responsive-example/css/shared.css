@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   background-color: #fff;
 }
+.logo,
 h1 {
   font-weight: 300;
   font-size: 40px;
@@ -26,10 +27,10 @@ img {
   height: auto;
   vertical-align: middle;
 }
-h3,
-h4 {
+h2 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 300;
+  line-height: normal;
 }
 .navbar,
 .hero,
@@ -47,7 +48,7 @@ h4 {
   font-weight: 600;
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
   width: fit-content;
-  padding: 20px;
+  padding: 25px;
 }
 .flex {
   display: flex;
@@ -56,9 +57,15 @@ h4 {
 .grid {
   display: grid;
 }
+.flex,
+.container,
+.installation-info {
+  text-align: center;
+  align-items: center;
+}
 .btn {
   border: none;
-  padding: 13px 30px;
+  padding: 10px 30px;
   border-radius: 5px;
   font-weight: 300;
 }
