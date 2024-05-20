@@ -1,13 +1,4 @@
-/* Colors */
-@primary-color: #047aed;
-@secondary-color: #1c3fa8;
-@dark-color: #002240;
-@dark-text-color: #333;
-@light-color: #f4f4f4;
-@white: #fff;
-@success-color: #5cb85c;
-@error-color: #d9534f;
-@shade: rgba(0, 0, 0, 0.1);
+@import "variables.less";
 
 * {
 	margin: 0;
@@ -25,6 +16,7 @@ body {
 h1 {
 	font-weight: 300;
 	font-size: 40px;
+	line-height: normal;
 }
 
 ul {
@@ -41,7 +33,8 @@ img {
 	vertical-align: middle;
 }
 
-h3,h4 {
+h3,
+h4 {
 	font-size: 1.2rem;
 	font-weight: 600;
 }
@@ -59,12 +52,11 @@ h3,h4 {
 }
 
 .card {
-	background-color: @light-color;
-	border-radius: 5px;
+	background-color: @white;
+	border-radius: 10px;
 	font-weight: 600;
 	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
 
-	margin: 10px 0;
 	width: fit-content;
 	padding: 20px;
 }
@@ -80,7 +72,7 @@ h3,h4 {
 
 .btn {
 	border: none;
-	padding: 10px 30px;
+	padding: 13px 30px;
 	border-radius: 5px;
 	font-weight: 300;
 }
@@ -152,6 +144,7 @@ footer {
 
 	.flex {
 		gap: 25px;
+		align-items: flex-start;
 
 		h4 {
 			font-size: 32px;
