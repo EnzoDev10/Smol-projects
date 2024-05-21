@@ -37,8 +37,12 @@ h2 {
   background-color: #047aed;
   color: #fff;
 }
-.hero {
-  padding-top: 40px;
+section {
+  padding-top: 32px;
+}
+section img {
+  width: 200px;
+  height: 200px;
 }
 .container {
   padding: 0 40px;
@@ -48,7 +52,7 @@ h2 {
   background-color: #fff;
   border-radius: 10px;
   font-weight: 600;
-  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   width: fit-content;
 }
 .flex {
@@ -81,6 +85,12 @@ h2 {
 .btn-dark {
   background-color: #002240;
   color: #fff;
+}
+.header-large {
+  font-size: 64px;
+}
+.md-text {
+  font-size: 20px;
 }
 /* Navbar Styles */
 .navbar a,

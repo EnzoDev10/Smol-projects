@@ -17,7 +17,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/shared.css" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/docs.css" />
 
 		<title>Clone Docs</title>
 	</head>
@@ -39,9 +39,9 @@
 		<!-- Hero -->
 		<section class="docs-hero hero">
 			<div class="container flex">
-				<div class="hero-text">
-					<h1>Docs</h1>
-					<p>Learn how to work with the Loruki platform</p>
+				<div class="md-text">
+					<h1 class="header-large">Docs</h1>
+					<p class="md-text">Learn how to work with the Loruki platform</p>
 				</div>
 				<img src="images/docs.png" alt="Docs icon" aria-hidden="true" />
 			</div>
@@ -50,10 +50,10 @@
 		<!-- Tutorials ? -->
 		<section class="tutorials">
 			<div class="container flex">
-				<div class="t-nav card">
+				<div class="nav card flex">
 					<strong>Essentials</strong>
 					<ul class="docs-list">
-						<li><a href="#">Introduction</a></li>
+						<li><a href="#" class="light-blue">Introduction</a></li>
 						<li><a href="#">About Loruki</a></li>
 						<li><a href="#">Installation</a></li>
 					</ul>
@@ -65,7 +65,8 @@
 						<li><a href="#">Upgrade & downgrade</a></li>
 					</ul>
 				</div>
-				<div class="t-intro card">
+
+				<div class="intro card flex">
 					<h2>Introduction</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -73,9 +74,9 @@
 						dolorum aliquam ipsam unde perspiciatis laudantium totam quam
 						laborum velit, at maxime minus?
 					</p>
-					<div class="warning">
-						<i class="fas fa-info"></i>
+					<div class="warning flex">
 						<p>
+							<i class="fas fa-info"></i>
 							Lorem upsum dolor sit amet consectetur adipisicing elit. Quae,
 							animi?
 						</p>
@@ -90,9 +91,10 @@
 					<a href="#" class="btn btn-primary">Install CLI</a>
 
 					<h3>Requirements</h3>
-
-					<p>Windows 10,Mac OSX, Linux</p>
-					<p>Node.js v12 or higher</p>
+					<ul>
+						<li>Windows 10, Mac OSX, Linux</li>
+						<li>Node.js v12 or higher</li>
+					</ul>
 
 					<h3>Install</h3>
 
@@ -100,7 +102,7 @@
 						<p>Mac (Homebrew)</p>
 						<pre>$ brew install loruki-cli</pre>
 						<p>NPM</p>
-						<pre>$ yarn install loruki-cli</pre>
+						<pre>$ npm install loruki-cli</pre>
 						<p>Yarn</p>
 						<pre>$ yarn install loruki-cli</pre>
 					</div>

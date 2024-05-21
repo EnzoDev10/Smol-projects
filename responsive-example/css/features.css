@@ -2,17 +2,9 @@
 .hero {
   padding-bottom: 30px;
 }
-.hero h1 {
-  font-size: 64px;
-}
 .hero P {
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 20px;
-}
-.hero img {
-  width: 200px;
-  height: 200px;
 }
 .platform {
   background-color: #f4f4f4;
