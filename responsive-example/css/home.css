@@ -6,9 +6,6 @@
 .showcase .flex {
   gap: 30px;
 }
-.showcase .flex .showcase-text {
-  padding-top: 40px;
-}
 .showcase .flex .showcase-text h1 {
   margin: 10px 0;
 }

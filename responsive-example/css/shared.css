@@ -37,6 +37,9 @@ h2 {
   background-color: #047aed;
   color: #fff;
 }
+.hero {
+  padding-top: 40px;
+}
 .container {
   padding: 0 40px;
   margin: 0 auto;
@@ -85,10 +88,10 @@ footer a {
   color: #fff;
 }
 .navbar {
+  padding-top: 8px;
   text-align: center;
 }
 .navbar .logo {
-  padding-top: 3px;
   font-size: 32px;
 }
 .navbar .flex {
@@ -97,7 +100,8 @@ footer a {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.1);
   max-width: 250px;
-  margin: 10px auto 0 auto;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 .navbar .flex li {
   display: flex;
