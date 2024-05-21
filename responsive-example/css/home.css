@@ -57,6 +57,9 @@
   margin: 50px;
   gap: 25px;
 }
+.stats-section .container .stats h2 {
+  font-weight: 700;
+}
 .stats-section .container .stats .stat {
   font-weight: bold;
 }
