@@ -74,21 +74,24 @@
 .stats-section .installation {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  gap: 20px;
-  width: 95%;
+  gap: 25px;
   margin: 0 auto;
 }
 .stats-section .installation .card {
-  width: 100%;
+  width: 95%;
   text-align: left;
   font-size: 19px;
+  padding: 25px;
 }
 .hosting {
   margin-top: 50px;
   padding: 40px 0;
 }
-.hosting .flex {
-  gap: 25px;
+.hosting .container {
+  gap: 20px;
+}
+.hosting .hosting-text {
+  gap: 15px;
 }
 .hosting .hosting-text h2 {
   font-weight: 300;
@@ -96,4 +99,27 @@
 }
 .hosting .hosting-text p {
   font-size: 20px;
+}
+/* Languages */
+.languages {
+  padding-top: 30px;
+}
+.languages h2 {
+  font-size: 32px;
+}
+.languages .flex {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 20px;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+.languages .flex .card {
+  padding: 20px;
+  margin: 18px 10px 40px 10px;
+}
+.languages .flex .card p {
+  margin-bottom: 10px;
 }
