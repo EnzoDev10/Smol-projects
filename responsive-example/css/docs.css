@@ -1,4 +1,7 @@
 /* Colors */
+.hero {
+  padding-bottom: 40px;
+}
 .hero .flex {
   gap: 20px;
 }

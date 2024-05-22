@@ -16,8 +16,15 @@ body {
 .logo,
 h1 {
 	font-weight: 300;
-	font-size: 40px;
 	line-height: normal;
+}
+
+.logo {
+	font-size: 32px;
+}
+
+h1 {
+	font-size: 40px;
 }
 
 ul {
@@ -48,7 +55,9 @@ h2 {
 
 section {
 	padding-top: 32px;
+}
 
+.hero {
 	img {
 		width: 200px;
 		height: 200px;
@@ -132,7 +141,7 @@ footer {
 		font-size: 32px;
 	}
 
-	.flex {
+	ul.flex {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
@@ -151,8 +160,7 @@ footer {
 				padding: 10px;
 
 				&:hover {
-					box-shadow: inset 0 0 0 1px @light-color;
-					box-shadow: 0 4px 1px -2px @light-color;
+					box-shadow: inset 0 -2px 0 0 @light-color;
 				}
 			}
 		}
@@ -169,10 +177,10 @@ footer {
 	.flex {
 		gap: 25px;
 		align-items: flex-start;
+		text-align: left;
 
-		h4 {
-			font-size: 32px;
-			font-weight: 500;
+		.logo {
+			margin: 10px 0;
 		}
 
 		.socials {
@@ -190,6 +198,36 @@ footer {
 			.twitter-icon:hover {
 				color: #1da1f2;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.navbar {
+		.container {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+		}
+
+		ul.flex {
+			margin: 0;
+			background-color: transparent;
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	footer {
+		.flex {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			text-align: left;
 		}
 	}
 }
