@@ -3,18 +3,18 @@
 .showcase {
   position: relative;
 }
-.showcase .flex {
+.showcase .grid {
   gap: 30px;
 }
-.showcase .flex .showcase-text h1 {
+.showcase .grid .showcase-text h1 {
   margin: 10px 0;
 }
-.showcase .flex .showcase-text p {
+.showcase .grid .showcase-text p {
   margin: 25px 0;
 }
-.showcase .flex .showcase-form {
+.showcase .grid .showcase-form {
   min-width: 300px;
-  min-height: 300px;
+  min-height: 350px;
   padding: 42px;
   color: #333;
   text-align: left;
@@ -22,14 +22,14 @@
   bottom: -70px;
   z-index: 100;
 }
-.showcase .flex .showcase-form h2 {
+.showcase .grid .showcase-form h2 {
   font-weight: 300;
   font-size: 24px;
 }
-.showcase .flex .showcase-form .form-control {
+.showcase .grid .showcase-form .form-control {
   margin: 25px 0;
 }
-.showcase .flex .showcase-form .form-control input {
+.showcase .grid .showcase-form .form-control input {
   all: unset;
   width: 100%;
   border-bottom: 1px solid #ccc;
@@ -123,3 +123,38 @@
 .languages .flex .card p {
   margin-bottom: 10px;
 }
+@media screen and (min-width: 500px) {
+  /* Hero */
+  .showcase {
+    padding: 20px 0;
+  }
+  .showcase .container {
+    grid-template-columns: 55% auto;
+  }
+  .showcase .container .showcase-form {
+    min-width: 400px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .stats-section .container h2 {
+    max-width: 500px;
+    margin: auto;
+  }
+  .stats-section .container .stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .stats-section .installation.grid {
+    grid-template-columns: 65% auto;
+  }
+  .stats-section .installation.grid .cards {
+    display: flex;
+    gap: 40px;
+  }
+  .hosting .container {
+    grid-template-columns: 55% auto;
+  }
+}
+/* @media screen and (min-width:768px) {
+	
+} */

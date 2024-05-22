@@ -2,11 +2,11 @@
 .hero {
   padding-bottom: 40px;
 }
-.hero .flex {
+.hero .grid {
   gap: 20px;
 }
-.hero .flex h1,
-.hero .flex p {
+.hero .grid h1,
+.hero .grid p {
   margin: 10px 0;
 }
 .tutorials {

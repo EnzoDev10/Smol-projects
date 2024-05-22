@@ -1,8 +1,8 @@
 /* Colors */
 .hero {
-  padding-bottom: 30px;
+  padding: 40px 0;
 }
-.hero P {
+.hero p {
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -40,4 +40,9 @@
 }
 .grid-section .card.flex p {
   margin: 10px 0;
+}
+@media screen and (min-width: 769px) {
+  .hero p {
+    margin-bottom: 0;
+  }
 }

@@ -4,11 +4,10 @@
 
 .showcase {
 	position: relative;
-	.flex {
+	.grid {
 		gap: 30px;
 
 		.showcase-text {
-
 			h1 {
 				margin: 10px 0;
 			}
@@ -20,7 +19,7 @@
 
 		.showcase-form {
 			min-width: 300px;
-			min-height: 300px;
+			min-height: 350px;
 			padding: 42px;
 			color: @dark-text-color;
 			text-align: left;
@@ -69,7 +68,7 @@
 			margin: 50px;
 			gap: 25px;
 
-			h2{
+			h2 {
 				font-weight: 700;
 			}
 
@@ -154,3 +153,51 @@
 		}
 	}
 }
+
+@media screen and (min-width: 500px) {
+	/* Hero */
+	.showcase {
+		padding: 20px 0;
+		.container {
+			grid-template-columns: 55% auto;
+
+			.showcase-form {
+				min-width: 400px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.stats-section {
+		.container {
+			h2 {
+				max-width: 500px;
+				margin: auto;
+			}
+
+			.stats {
+				flex-direction: row;
+				justify-content: space-around;
+			}
+		}
+
+		.installation.grid {
+			grid-template-columns: 65% auto;
+
+			.cards {
+				display: flex;
+
+				gap: 40px;
+			}
+		}
+	}
+
+	.hosting .container {
+		grid-template-columns:55% auto;
+
+	}
+}
+/* @media screen and (min-width:768px) {
+	
+} */
