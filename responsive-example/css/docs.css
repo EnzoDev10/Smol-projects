@@ -12,60 +12,68 @@
 .tutorials {
   padding-bottom: 40px;
 }
-.tutorials .flex .card {
+.tutorials .grid .card {
   text-align: left;
   font-weight: 300;
   min-width: 100%;
   align-items: flex-start;
 }
-.tutorials .flex .card strong {
+.tutorials .grid .card strong {
   font-size: 19px;
   margin: 20px 0;
 }
-.tutorials .flex .nav {
+.tutorials .grid .nav {
   background-color: #f4f4f4;
   margin: 10px;
   padding: 32px;
 }
-.tutorials .flex .nav ul {
+.tutorials .grid .nav ul {
   width: 100%;
 }
-.tutorials .flex .nav ul .light-blue {
+.tutorials .grid .nav ul .light-blue {
   color: #047aed;
 }
-.tutorials .flex .nav ul li {
+.tutorials .grid .nav ul li {
   width: 100%;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 5px;
   font-size: 17px;
 }
-.tutorials .flex .intro.flex {
+.tutorials .grid .intro.flex {
   margin: 10px;
   padding: 20px;
   gap: 20px;
 }
-.tutorials .flex .intro.flex h2 {
+.tutorials .grid .intro.flex h2 {
   font-size: 24px;
   font-weight: normal;
 }
-.tutorials .flex .intro.flex .warning.flex {
+.tutorials .grid .intro.flex .warning.flex {
+  width: 100%;
   background-color: #5cb85c;
   color: #fff;
   font-weight: 700;
   flex-direction: row;
-  padding: 15px;
+  padding: 10px 20px;
   text-align: left;
 }
-.tutorials .flex .intro.flex .warning.flex i {
+.tutorials .grid .intro.flex .warning.flex i {
   padding-right: 10px;
 }
-.tutorials .flex .intro.flex .tut-install {
+.tutorials .grid .intro.flex .tut-install {
   width: 100%;
 }
-.tutorials .flex .intro.flex .tut-install pre {
+.tutorials .grid .intro.flex .tut-install pre {
   padding: 10px 20px;
   margin: 10px 0;
   color: #fff;
   background-color: #333;
+}
+@media screen and (min-width: 769px) {
+  .grid {
+    grid-template-columns: 30% auto;
+    gap: 40px;
+    align-items: start;
+  }
 }

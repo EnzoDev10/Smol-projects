@@ -14,7 +14,7 @@
 
 .tutorials {
     padding-bottom:40px;
-	.flex {
+	.grid {
 		.card {
 			text-align: left;
 			font-weight: 300;
@@ -59,11 +59,12 @@
 			}
 
 			.warning.flex {
+				width: 100%;
 				background-color: @success-color;
 				color: @white;
 				font-weight: 700;
 				flex-direction: row;
-				padding: 15px;
+				padding: 10px 20px;
 				text-align: left;
 
 				i {
@@ -84,5 +85,14 @@
 
 
 		}
+	}
+}
+
+
+@media screen and (min-width: 769px) {
+	.grid {
+		grid-template-columns: 30% auto;
+		gap: 40px;
+		align-items: start;
 	}
 }
