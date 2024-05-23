@@ -158,6 +158,11 @@ body #bootcamp span {
 body #bootcamp img {
   height: 6rem;
 }
+.new {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 48px;
+}
 @media screen and (min-width: 1024px) {
   body main .projects-container {
     gap: 10px 100px;
