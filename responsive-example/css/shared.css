@@ -83,6 +83,9 @@ section {
   border-radius: 5px;
   font-weight: 300;
 }
+.btn:hover {
+  transform: scale(0.97);
+}
 .btn-outline {
   border: 1px solid #f4f4f4;
   color: #fff;
@@ -90,6 +93,9 @@ section {
 .btn-primary {
   color: #fff;
   background-color: #047aed;
+}
+.btn-primary:hover {
+  font-weight: 700;
 }
 .btn-dark {
   background-color: #002240;

@@ -117,8 +117,12 @@
   flex-wrap: wrap;
 }
 .languages .flex .card {
-  padding: 20px;
+  padding: 30px 20px;
   margin: 18px 10px 40px 10px;
+}
+.languages .flex .card:hover {
+  transform: translateY(-10px);
+  transition: transform 200ms;
 }
 .languages .flex .card p {
   margin-bottom: 10px;

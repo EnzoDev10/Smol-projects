@@ -40,6 +40,9 @@
   margin-bottom: 5px;
   font-size: 17px;
 }
+.tutorials .grid .nav ul li:hover {
+  font-weight: 700;
+}
 .tutorials .grid .intro.flex {
   margin: 10px;
   padding: 20px;

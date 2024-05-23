@@ -144,8 +144,13 @@
 		flex-wrap: wrap;
 
 		.card {
-			padding: 20px;
+			padding: 30px 20px;
 			margin: 18px 10px 40px 10px;
+
+			&:hover {
+				transform: translateY(-10px);
+				transition: transform 200ms;
+			}
 
 			p {
 				margin-bottom: 10px;
