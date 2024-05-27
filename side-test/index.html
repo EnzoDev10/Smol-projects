@@ -20,6 +20,10 @@
 			</div>
 		</header>
 		<main>
+			<video playsinline autoplay muted loop poster="media/bg-fallback.svg" id="bgvid">
+				<source src="media/video-bg.mp4" type="video/mp4" />
+			</video>
+			<div class="overlay"></div>
 			<div class="container headphones-container">
 				<img
 					src="media/head-left.svg"
@@ -31,10 +35,19 @@
 					alt="Right side of a headphone"
 					aria-hidden="true"
 				/>
-
 			</div>
-			<button><img src="media/left-btn.svg" alt=""></button>
-			<button><img src="media/right-btn.svg" alt=""></button>
+			<button>
+				<img
+					src="media/left-btn.svg"
+					alt="Plays a sound on the left headphone."
+				/>
+			</button>
+			<button>
+				<img
+					src="media/right-btn.svg"
+					alt="Plays a sound on the right headphone."
+				/>
+			</button>
 		</main>
 		<footer>
 			<div class="container">
@@ -43,7 +56,9 @@
 				<div class="card-container">
 					<div class="card contacts">
 						<h3>CONTACTS</h3>
-						<a href="mailto:beagency01@gmail.com">Email: beagency01@gmail.com</a>
+						<a href="mailto:beagency01@gmail.com"
+							>Email: beagency01@gmail.com</a
+						>
 					</div>
 					<div class="card atr">
 						<h3>ATRIBUTTIONS</h3>
