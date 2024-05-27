@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   font-family: "roboto";
+  overflow-x: hidden;
 }
 body .container {
   padding-right: 15px;
