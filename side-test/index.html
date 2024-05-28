@@ -14,7 +14,7 @@
 	</head>
 	<body>
 
-		<main class="container">
+		<main class="container flex">
 			<video
 				playsinline
 				autoplay
@@ -26,36 +26,45 @@
 				<source src="media/video-bg.mp4" type="video/mp4" />
 			</video>
 
-			<h1>TEST YOUR HEADPHONES</h1>
-			<p>Sound test for your headphones</p>
-			<div class="container headphones-container">
-				<img
-					src="media/left-head.png"
-					alt="Left side of a headphone"
-					aria-hidden="true"
-				/>
-				<img
-					src="media/right-head.png"
-					alt="Right side of a headphone"
-					aria-hidden="true"
-				/>
+			<div class="text">
+				<h1>TEST YOUR HEADPHONES</h1>
+				<p>Sound test for your headphones</p>
 			</div>
-			<button>
-				<img
-					src="media/left-btn.svg"
-					alt="Plays a sound on the left headphone."
-				/>
-			</button>
-			<button>
-				<img
-					src="media/right-btn.svg"
-					alt="Plays a sound on the right headphone."
-				/>
-			</button>
-		</main>
-		<footer>
-			<div class="container">
+			
+			<div>
+				<div class="headphones-container flex">
+					<img
+						src="media/left-head.png"
+						alt="Left side of a headphone"
+						aria-hidden="true"
+						class="headphone-img"
+					/>
+					<img
+						src="media/right-head.png"
+						alt="Right side of a headphone"
+						aria-hidden="true"
+						class="headphone-img"
+					/>
+				</div>
 				<div>
+					<button>
+						<img
+							src="media/left-btn.svg"
+							alt="Plays a sound on the left headphone."
+						/>
+					</button>
+					<button>
+						<img
+							src="media/right-btn.svg"
+							alt="Plays a sound on the right headphone."
+						/>
+					</button>
+				</div>
+			</div>
+		</main>
+		<footer class="container flex">
+			
+				<div class="text">
 					<h2>THANKS FOR CHOOSING US</h2>
 					<p>Contact us with our email.</p>
 				</div>
@@ -73,7 +82,7 @@
 						>
 					</div>
 				</div>
-			</div>
+			
 		</footer>
 	</body>
 </html>
