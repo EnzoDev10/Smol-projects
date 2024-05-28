@@ -13,25 +13,30 @@
 		<title>headset tester</title>
 	</head>
 	<body>
-		<header>
-			<div class="container">
-				<h1>TEST YOUR HEADPHONES</h1>
-				<p>Sound test for your headphones</p>
-			</div>
-		</header>
-		<main>
-			<video playsinline autoplay muted loop poster="media/bg-fallback.svg" id="bgvid">
+		<!-- TODO hacer que el contenido de ambas secciones encaje bien con la altura del viewport -->
+
+		<main class="container">
+			<video
+				playsinline
+				autoplay
+				muted
+				loop
+				poster="media/bg-fallback.svg"
+				id="bgvid"
+			>
 				<source src="media/video-bg.mp4" type="video/mp4" />
 			</video>
-			<div class="overlay"></div>
+
+			<h1>TEST YOUR HEADPHONES</h1>
+			<p>Sound test for your headphones</p>
 			<div class="container headphones-container">
 				<img
-					src="media/head-left.svg"
+					src="media/left-head.png"
 					alt="Left side of a headphone"
 					aria-hidden="true"
 				/>
 				<img
-					src="media/head-right.svg"
+					src="media/right-head.png"
 					alt="Right side of a headphone"
 					aria-hidden="true"
 				/>
@@ -51,8 +56,10 @@
 		</main>
 		<footer>
 			<div class="container">
-				<h2>THANKS FOR CHOOSING US</h2>
-				<p>Contact us with our email.</p>
+				<div>
+					<h2>THANKS FOR CHOOSING US</h2>
+					<p>Contact us with our email.</p>
+				</div>
 				<div class="card-container">
 					<div class="card contacts">
 						<h3>CONTACTS</h3>
