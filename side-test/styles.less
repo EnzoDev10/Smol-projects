@@ -14,6 +14,8 @@
 @orange-color: #f22f1d;
 @text-color: #fff;
 
+/* Utilities */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -43,12 +45,41 @@ h2 {
 p,
 a {
 	font-weight: 100;
+	text-decoration: none;
+}
+
+a {
+	padding: 5px;
+	background: linear-gradient(
+			to right,
+			rgba(100, 200, 200, 1),
+			rgba(100, 200, 200, 1)
+		),
+		linear-gradient(
+			to right,
+			rgba(255, 0, 0, 1),
+			rgba(255, 0, 180, 1),
+			rgba(0, 100, 200, 1)
+		);
+		background-size: 100% 3px, 0 3px;
+		background-position: 100% 100%, 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size 400ms;
+}
+
+a:hover {
+	background-size: 0 3px, 100% 3px;
 }
 
 .text {
 	background: @bg-color;
 	border-radius: 5px;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 600px;
 }
+
+/* mobile */
 
 body {
 	width: 100vw;
@@ -69,13 +100,18 @@ body {
 		height: 80vh;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
 
 		.text {
 			margin-top: 20px;
 		}
 
 		.headphones-container {
-			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.img-wrapper {
 			gap: 40px;
 			margin-bottom: 20px;
 		}
@@ -85,12 +121,22 @@ body {
 			height: auto;
 		}
 
-		button {
-			width: 200px;
-			margin: 0 auto;
-			cursor: pointer;
-			background: transparent;
-			border: none;
+		.buttons {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+
+			.btn {
+				margin: 0 auto;
+				cursor: pointer;
+				background: transparent;
+				border: none;
+
+				img {
+					height: 70px;
+					width: auto;
+				}
+			}
 		}
 	}
 }
@@ -124,16 +170,22 @@ footer {
 	}
 }
 
+/* Tablets */
+
 @media (min-width: 768px) {
 	.container {
 		width: 750px;
 	}
 }
+
+/* smaller notebooks */
 @media (min-width: 992px) {
 	.container {
 		width: 970px;
 	}
 }
+
+/* Desktop */
 @media (min-width: 1200px) {
 	.container {
 		width: 1170px;
