@@ -46,8 +46,8 @@ a:hover {
   background: rgba(20, 7, 38, 0.6);
   border-radius: 5px;
   width: 90%;
-  margin: 0 auto;
   padding: 5px;
+  margin: 0 auto;
 }
 /* mobile */
 body {
@@ -74,6 +74,8 @@ body main .text {
   margin-top: 20px;
 }
 body main .headphones-container {
+  position: relative;
+  width: 100%;
   flex-direction: column;
   align-items: center;
 }
@@ -85,18 +87,17 @@ body main .headphone-img {
   width: 75px;
   height: auto;
 }
-body main .buttons {
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-body main .buttons .btn {
+body main .btn {
   margin: 0 auto;
   cursor: pointer;
   background: transparent;
   border: none;
+  transition: transform 500ms;
 }
-body main .buttons .btn img {
+body main .btn:hover {
+  transform: translateY(-10px);
+}
+body main .btn img {
   height: 70px;
   width: auto;
 }
@@ -126,6 +127,20 @@ footer {
   margin-bottom: 20px;
   gap: 40px;
 }
+.card-container .card {
+  animation: float 8s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -142,6 +157,40 @@ footer {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+  .text {
+    margin: 0;
+    text-align: right;
+    background: transparent;
+    align-self: end;
+  }
+  body main .text {
+    margin-top: 50px;
+  }
+  body main .headphones-container {
+    flex-direction: row;
+    align-items: end;
+  }
+  body main .headphones-container .btn {
+    margin-bottom: 10px;
+  }
+  body main .headphones-container .left-btn {
+    order: -1;
+  }
+  body main .headphones-container .img-wrapper {
+    margin-bottom: 0;
+  }
+  .card-container {
+    background: transparent;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-bottom: 0;
+  }
+  .card-container .card {
+    background-color: rgba(20, 7, 38, 0.9);
+    padding: 20px;
+    padding-bottom: 100px;
+    border-radius: 10px;
   }
 }
 /* Desktop */
