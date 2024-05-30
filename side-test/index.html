@@ -19,10 +19,10 @@
 				autoplay
 				muted
 				loop
-				poster="media/bg-fallback.svg"
+				poster="media/images/bg-fallback.svg"
 				id="bgvid"
 			>
-				<source src="media/video-bg.mp4" type="video/mp4" />
+				<source src="media/video/video-bg.mp4" type="video/mp4" />
 			</video>
 
 			<div class="text">
@@ -31,29 +31,42 @@
 			</div>
 
 			<div class="headphones-container flex">
+				<!-- Empty src to change it with the buttons -->
+				<audio id="audio" src=""></audio>
+
 				<div class="img-wrapper flex">
 					<img
-						src="media/left-head.png"
+						src="media/images/left-head.png"
 						alt="Left side of a headphone"
 						aria-hidden="true"
 						class="headphone-img"
+						id="left-headphone"
 					/>
 					<img
-						src="media/right-head.png"
+						src="media/images/right-head.png"
 						alt="Right side of a headphone"
 						aria-hidden="true"
 						class="headphone-img"
+						id="right-headphone"
 					/>
 				</div>
-				<button class="btn left-btn">
+				<button
+					class="btn"
+					id="left-btn"
+					onclick="play('media\\audio\\left.mp4')"
+				>
 					<img
-						src="media/left-btn.svg"
+						src="media/images/left-btn.svg"
 						alt="Plays a sound on the left headphone."
 					/>
 				</button>
-				<button class="btn right-btn">
+				<button
+					class="btn"
+					id="right-btn"
+					onclick="play('media\\audio\\right.mp4')"
+				>
 					<img
-						src="media/right-btn.svg"
+						src="media/images/right-btn.svg"
 						alt="Plays a sound on the right headphone."
 					/>
 				</button>
@@ -78,4 +91,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="script.js"></script>
 </html>
