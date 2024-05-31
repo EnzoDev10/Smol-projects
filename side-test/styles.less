@@ -14,6 +14,13 @@
 @orange-color: #f22f1d;
 @text-color: #fff;
 
+/* Gradient Colors */
+
+@first:#E0DA33;
+@second:#D78526;
+@third:#AC1523;
+@fourth:#65152F;
+@fifth:#401440;
 /* Utilities */
 
 * {
@@ -102,12 +109,16 @@ body {
 			transition: transform 500ms;
 		}
 
+		.active {
+			transform: translateY(-10px);
+		}
+
 		.btn {
 			margin: 0 auto;
 			cursor: pointer;
 			background: transparent;
 			border: none;
-			transition: transform 500ms;
+			transition: all 500ms;
 
 			&:hover {
 				transform: translateY(-10px);
@@ -115,14 +126,24 @@ body {
 
 			img {
 				height: 70px;
-				width: auto;
+				width: 270px;
+				transition: opacity 200ms;
+			}
+
+			img.active {
+				display: none;
+			}
+
+			&:focus {
+				img {
+					display: none;
+				}
+
+				img.active {
+					display: block;
+				}
 			}
 		}
-
-		#left-headphone.active {
-			transform: translateY(-10px);
-		}
-		
 	}
 }
 
@@ -161,14 +182,14 @@ footer {
 			padding: 5px;
 			background: linear-gradient(
 					to right,
-					rgba(100, 200, 200, 1),
-					rgba(100, 200, 200, 1)
+					@first,
+					@second,
 				),
 				linear-gradient(
 					to right,
-					rgba(255, 0, 0, 1),
-					rgba(255, 0, 180, 1),
-					rgba(0, 100, 200, 1)
+					@third,
+					@fourth,
+					@fifth
 				);
 			background-size: 100% 3px, 0 3px;
 			background-position: 100% 100%, 0 100%;
@@ -213,7 +234,6 @@ footer {
 	}
 }
 
-
 /* smaller notebooks */
 @media (min-width: 992px) {
 	.container {
@@ -239,7 +259,7 @@ footer {
 				.btn {
 					margin-bottom: 10px;
 				}
-				.left-btn {
+				#left-btn {
 					order: -1;
 				}
 
